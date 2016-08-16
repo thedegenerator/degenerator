@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'starter-project',
+    modulePrefix: 'degenerator-ui',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
