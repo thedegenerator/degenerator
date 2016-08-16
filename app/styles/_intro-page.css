@@ -1,17 +1,78 @@
 body {
   margin: 0;
 }
-.back-img {
-  background-size: contain;
-  width: 10%;
-  position: fixed;
-  top: 0;
-  left: 0;
+.head {
 }
-.app {
-  position: relative;
+
+.login-btn {
+padding: .3rem;
+border: 1px solid #000;
+border-radius: 1%;
+background: #fff;
+color: #000;
+font-family: Arial;
+font-weight: bold;
+margin-right: .3rem;
+}
+
+.register-btn {
+  padding: .3rem;
+  border: 1px solid #000;
+  border-radius: 1%;
+  background: #fff;
+  color: #000;
+  font-family: Arial;
+  font-weight: bold;
+}
+.hero__intro {
+  display: flex;
   height: 100vh;
 }
-.left {
-  color: #fff;
+.center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container__intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.left__intro {
+  color: #000;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  margin-bottom: .2rem;
+  border: 2px solid #000;
+  background: #fff;
+}
+.title__intro {
+  margin: 0;
+  text-align: right;
+}
+.de {
+  color: #f00
+}
+.tagline__intro {
+  margin: .5rem 0;
+}
+.btn-box__intro {
+  display: flex;
+}
+
+.example {
+  width: 100%;
+  height: auto;
+}
+
+.right__intro {
+  width: 40%;
+  border: 2px solid #000;
 }
