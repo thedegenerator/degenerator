@@ -146,6 +146,9 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 50%;
   background: black;
     cursor: pointer;
+    &:active{
+      background: red;
+    }
 }
 input[type=range]::-moz-range-thumb{
   width:1rem;
