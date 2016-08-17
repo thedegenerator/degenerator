@@ -7,12 +7,16 @@
             {{input class="input__login" type="text" placeholder="email" value=email}}
             {{input class="input__login" type="password" placeholder="password" value=password}}
             <div class="btn-box__login">
-            <button class="login-btn">login</button>
+              {{#link-to 'degenerator.main' class="login-btn"}}
+                login
+              {{/link-to}}
           </div>
         </div>
         <div class="right__login">
           <h2 class="member__login">not a member yet? <br>sign up now and <br>you can start <br>degenerating!</h2>
-          <button class="register-btn">register</button>
+          {{#link-to 'degenerator.register' class="register-btn"}}
+            register
+          {{/link-to}}
         </div>
       </div>
     </div>
