@@ -7,7 +7,6 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  position: fixed;
 }
 
 .title__index {
@@ -21,15 +20,11 @@ body {
   margin: .5rem 0;
   color: #fff;
 }
-.header__right {
-  display: flex;
-
-
+.header-right {
 }
-.post,.login-link, .register-link {
+.post {
   color: #fff;
   margin: 0;
-  width: 4rem;
 
   &:hover {
     color: #f00;
