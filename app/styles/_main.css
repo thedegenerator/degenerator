@@ -10,33 +10,37 @@
 
 }
 .post-card{
-  margin-top: 8rem;
+  margin-top: 1rem;
   border: black .3rem solid;
   padding:1rem;
   &__title{
     color: red;
-    padding: .5rem;
+    // padding: .5rem;
   }
 }
 
 .degeneration-type{
 display: flex;
 flex-wrap: wrap;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
 padding: .5rem;
+background: black;
+color:white;
+font-size: .5rem;
 
   &__item{
 
-min-width:3rem;
+min-width:2rem;
 text-align: center;
 &::before{
   content: "√";
+  color: red;
 }
   }
 }
 .img-frame{
-  background: red;
+  border: black .3rem solid;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -45,15 +49,20 @@ text-align: center;
   }
 }
 .view-counts{
-  padding-top:1rem;
+  // padding-top:1rem;
   padding-left: .5rem;
-    padding-right: 1rem;
+    padding-right: .5rem;
+background: black;
+text-align: center;
+    font-size: .75rem;
+    color:white;
 }
 .views-left{
   color:red;
 }
 
 .view-btn{
+    margin-top: .5rem;
   outline: none;
   font-size: 2rem;
   background: white;
