@@ -1,0 +1,58 @@
+.main-container{
+
+  &__inner{
+    max-width: 60rem;
+    margin:auto;
+    // background: #666;
+    display: flex;
+
+  }
+
+}
+.post-card{
+  margin-top: 8rem;
+  border: black .3rem solid;
+  padding:1rem;
+  &__title{
+    color: red;
+    padding: .5rem;
+  }
+}
+
+.degeneration-type{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+padding: .5rem;
+
+  &__item{
+
+min-width:3rem;
+text-align: center;
+&::before{
+  content: "√";
+}
+  }
+}
+
+.view-counts{
+  padding-top:1rem;
+  padding-left: .5rem;
+    padding-right: 1rem;
+}
+.views-left{
+  color:red;
+}
+
+.view-btn{
+  outline: none;
+  font-size: 2rem;
+  background: white;
+  border: 0.2rem black solid;
+  padding: .1rem .5rem .1rem .5rem;
+  &:active{
+    background: black;
+    color:white;
+  }
+}
