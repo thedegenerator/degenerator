@@ -1,35 +1,37 @@
 body {
   margin: 0;
 }
+
 .header__index {
   background: #000;
   padding: 2rem 3rem;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  top:0;
+  top: 0;
 }
 
 .title__index {
   margin: 0;
   color: #fff;
 }
+
 .de {
   color: #f00
 }
+
 .tagline__index {
   margin: .5rem 0;
   color: #fff;
 }
+
 .header__right {
   display: flex;
-
 }
-.post,.login-link,.register-link {
+
+.post, .login-link, .register-link {
   color: #fff;
   margin-right: 1rem;
-
-
   &:hover {
     color: #f00;
   }

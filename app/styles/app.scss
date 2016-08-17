@@ -5,17 +5,35 @@
 @import "index";
 @import "degenerate";
 
-
-*{
+* {
   box-sizing: border-box;
   font-family: sans-serif;
   text-transform: lowercase;
 }
-p,h1,h2,h3,h4,h5,body{
+
+body,
+h1,h2,h3,h4,h5,p {
   margin: 0;
 }
 
-a{
-  color: white;
+a {
+  color: inherit;
   text-decoration: none;
+}
+
+.text-input{
+  font-size: 2rem;
+  width: 100%;
+  outline: red;
+  background: black;
+  color:red;
+  &:active{
+
+  background: red;
+  }
+
+}
+.btn-click:active{
+  background: black;
+  color:white;
 }
