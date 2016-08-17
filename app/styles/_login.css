@@ -11,15 +11,6 @@
   font-weight: bold;
 }
 
-.register-btn {
-  padding: .3rem;
-  width: 100%;
-  border: .2rem solid #000;
-  font-size: 1rem;
-  background: #fff;
-  color: #000;
-  font-weight: bold;
-}
 .hero__login {
   display: flex;
   height: 100vh;
@@ -39,7 +30,7 @@
   flex-wrap: wrap;
 }
 
-.left__login {
+.login__box {
   color: #000;
   padding: 1rem;
   display: flex;
@@ -72,28 +63,4 @@
 .login-btn {
   text-align: center;
   text-decoration: none;
-}
-.register-btn {
-  text-align: center;
-  text-decoration: none;
-}
-
-
-.right__login {
-  color: #000;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-end;
-  margin-bottom: .2rem;
-  border: .2rem solid #000;
-  background: #fff;
-}
-.member__login {
-  text-align: right;
-  padding: 1rem 0 1rem 1rem;
-}
-
-.register-btn {
-  margin-top: .7rem;
 }

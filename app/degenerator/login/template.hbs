@@ -2,7 +2,7 @@
   <div class="hero__login">
     <div class="center">
       <div class="container__login">
-        <div class="left__login">
+        <div class="login__box">
             <h2 class="login__title">login</h2>
             {{input class="input__login text-input" type="text" placeholder="email" value=email}}
             {{input class="input__login text-input" type="password" placeholder="password" value=password}}
@@ -11,12 +11,6 @@
                 login
               {{/link-to}}
           </div>
-        </div>
-        <div class="right__login">
-          <h2 class="member__login">not a member yet? <br>sign up now and <br>you can start <br>degenerating!</h2>
-          {{#link-to 'degenerator.register' class="register-btn btn-click"}}
-            register
-          {{/link-to}}
         </div>
       </div>
     </div>
