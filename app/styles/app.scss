@@ -27,13 +27,19 @@ a {
   outline: red;
   background: black;
   color:red;
+  border: .2rem solid transparent ;
   &:active{
 
   background: red;
   }
-
+  &:focus{
+    border-color: red ;
+  }
 }
 .btn-click:active{
   background: black;
   color:white;
+}
+*:focus, input:focus{
+  outline-color: red;
 }
