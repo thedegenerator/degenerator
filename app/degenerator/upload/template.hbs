@@ -3,38 +3,38 @@
 
     <div class="upload-card">
         {{!-- <label class="image-title-lable upload-card__item" for="imageTitle">Title</label> --}}
-        <input class="image-title-input input" type="text" name="imageTitle" id="" placeholder="Title For Image">
-        <label class="view-threshold-lable upload-card__item" for="viewThreshold">Veiws till degeneration</label>
-        <input class="view-threshold-input slider" type="range" min="0" max="100" name="viewThreshold" value="0">
+        {{input class="image-title-input input" type="text" name="imageTitle" id="" placeholder="Title For Image"}}
+        <label class="view-threshold-lable upload-card__item" for="viewThreshold">Veiws till degeneration <span class="view-number">{{viewNumber}}</span></label>
+      {{input class="view-threshold-input slider" type="range" min="0" max="10" name="viewThreshold" value=viewNumber placeholder="0"}}
         <div class="add-to-homepage upload-card__item">
           <label for="add-to-homepage__title"> Add to homepage?</label>
-        <input id="add-to-homepage__title"type="checkbox" name="" class="addToHomepage">
+        {{input id="add-to-homepage__title"type="checkbox" name="" class="addToHomepage"}}
 </div>
 
         <div class="checkbox-group upload-card__item">
 <div class="checkbox-group__item">
           <label for="dither">dither</label>
-            <input id="dither" name="dither" type="checkbox" class="style-checkbox">
+            {{input id="dither" name="dither" type="checkbox" class="style-checkbox"}}
           </div>
           <div class="checkbox-group__item">
           <label for="emboss">emboss</label>
-            <input id="emboss"  name="emboss" type="checkbox" class="style-checkbox">
+            {{input id="emboss"  name="emboss" type="checkbox" class="style-checkbox"}}
           </div>
           <div class="checkbox-group__item">
           <label for="sharpen">sharpen</label>
-            <input id="sharpen" name="sharpen" type="checkbox" class="style-checkbox">
+            {{input id="sharpen" name="sharpen" type="checkbox" class="style-checkbox"}}
           </div>
           <div class="checkbox-group__item">
           <label   for="blur">blur</label>
-            <input id="blur" name="blur" type="checkbox" class="style-checkbox">
+            {{input id="blur" name="blur" type="checkbox" class="style-checkbox"}}
           </div>
           <div class="checkbox-group__item">
           <label for="implode">implode</label>
-            <input id="implode"  name="implode" type="checkbox" class="style-checkbox">
+            {{input id="implode"  name="implode" type="checkbox" class="style-checkbox"}}
           </div>
           <div class="checkbox-group__item">
           <label for="cycle">cycle</label>
-            <input id="cycle" name="cycle" type="checkbox" class="style-checkbox">
+            {{input id="cycle" name="cycle" type="checkbox" class="style-checkbox"}}
 </div>
         </div>
 <div class="browse-group upload-card__item">

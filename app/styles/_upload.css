@@ -98,6 +98,7 @@ border: .2rem white solid;
 
 
 &:hover{
+  transition: 4s all;
   background: white;
   color: white;
 }
