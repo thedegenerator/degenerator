@@ -5,7 +5,9 @@ body {
   background: #000;
   padding: 2rem 3rem;
   display: flex;
+  width: 100%;
   justify-content: space-between;
+  position: fixed;
 }
 
 .title__index {
