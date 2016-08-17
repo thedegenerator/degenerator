@@ -1,0 +1,36 @@
+.app__degenerate {
+  margin: 0;
+}
+.hero__degenerate {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.nav__degenerate {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.container__degenerate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 60rem;
+  width: 100%;
+}
+.img-wrap__degenerate {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.img-container__degenerate {
+  width: 100%;
+}
+.img__degenerate {
+  width: 100%;
+  height: auto;
+}
