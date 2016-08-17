@@ -35,7 +35,15 @@ text-align: center;
 }
   }
 }
-
+.img-frame{
+  background: red;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  &__frame{
+    text-align: center;
+  }
+}
 .view-counts{
   padding-top:1rem;
   padding-left: .5rem;
