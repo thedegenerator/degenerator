@@ -21,11 +21,14 @@ body {
   margin: .5rem 0;
   color: #fff;
 }
-.header-right {
+.header__right {
+  display: flex;
+
 }
-.post {
+.post,.login-link,.register-link {
   color: #fff;
-  margin: 0;
+  margin-right: 1rem;
+
 
   &:hover {
     color: #f00;
