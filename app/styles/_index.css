@@ -14,10 +14,19 @@ body {
 .title__index {
   margin: 0;
   color: #fff;
+
+  &:hover {
+    color: #f00;
+  }
+  &:hover > .de {
+    color: #fff;
+  }
 }
 
 .de {
   color: #f00
+
+
 }
 
 .tagline__index {
