@@ -1,20 +1,22 @@
 <div class="app__degenerate">
   <div class="hero__degenerate">
-  <div class="nav__degenerate">
-    <div class="container__degenerate">
-       back
-      <h1 class="title__degenerate">cage the crude</h1>
-      <p class="views__degenerate">753 views</p>
+    <div class="nav__degenerate">
+      <div class="container__degenerate">
+        {{#link-to "degenerator.main" class="back__degenerate" }}
+          go back
+        {{/link-to}}
+        <p class="title__degenerate">the lumberjack</p>
+        <p class="views__degenerate">753 views</p>
+      </div>
+    </div>
+    <div class="img-wrap__degenerate">
+      <div class="container__degenerate">
+        <div class="img-container__degenerate">
+          <img class="img__degenerate" src="https://s-media-cache-ak0.pinimg.com/236x/36/62/af/3662afc9550170d09fb590971b0cf512.jpg" alt="">
+        </div>
+      </div>
     </div>
   </div>
-<div class="img-wrap__degenerate">
-  <div class="container__degenerate">
-    <div class="img-container__degenerate">
-      <img class="img__degenerate" src="https://www.placecage.com/800/800" alt="" >
-    </div>
-</div>
-  </div>
-</div>
 </div>
 
 {{outlet}}
