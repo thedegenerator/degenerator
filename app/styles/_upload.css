@@ -23,6 +23,7 @@
   &__item{
     margin-top: 1rem;
   }
+
 }
 
 .image-title-input{
@@ -33,6 +34,7 @@ border: none;
 background: black;
 color:red;
 border: .2rem white solid;
+  border: .2rem solid transparent ;
 // &::-webkit-input-placeholder{
 //   color:#5e5e5e;
 //   background: white;
@@ -43,6 +45,9 @@ border: .2rem white solid;
   &:active{
 
   background: red;
+  }
+  &:focus{
+    border: red .2rem solid;
   }
 }
 .checkbox-group {
