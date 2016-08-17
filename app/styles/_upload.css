@@ -14,7 +14,7 @@
 .upload-card {
 
   border: 0.2rem black solid;
-  padding: 0.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -40,6 +40,10 @@ border: .2rem white solid;
 //   text-align: center;
 //   border: none;
 // }
+  &:active{
+
+  background: red;
+  }
 }
 .checkbox-group {
   display: flex;

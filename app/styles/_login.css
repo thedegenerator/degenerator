@@ -54,13 +54,11 @@
 
 .input__login {
   margin-bottom: 1rem;
+  outline: red;
   padding: .3rem;
   border: none;
-  border-bottom: .2rem dashed #000;
-  outline: none;
-  text-align: center;
-  color: #000;
   width: 14rem;
+
 }
 
 .tagline__login {
