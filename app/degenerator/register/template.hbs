@@ -5,9 +5,9 @@
       {{#simple-form onsubmit=(action "registerUser") as |formValues|}}
         {{input class="input__login input__register text-input" type="text" placeholder="email" value=email}}
         {{input class="input__login input__register text-input" type="password" placeholder="password" value=password}}
-        <div class="btn-container__register btn-click">
+        <button type="submit" class="btn-container__register btn-click">
           register
-        </div>
+        </button>
       {{/simple-form}}
     </div>
   </div>

@@ -4,16 +4,16 @@
       <div class="login__box">
         <h2 class="login__title">login</h2>
         {{#simple-form onsubmit=(action "loginUser") as |formValues|}}
-          {{input class="input__login text-input" type="text" placeholder="email" value=email}}
-          {{input class="input__login text-input" type="password" placeholder="password" value=password}}
+          {{input class="input__login text-input" type="text" placeholder="email" value=email}} {{input class="input__login text-input" type="password" placeholder="password" value=password}}
           <div class="btn-box__login">
-            {{#link-to 'degenerator.main' class="login-btn btn-click" }}
+            <button type='submit' class="login-btn btn-click" >
               login
-            {{/link-to}}
-          </div>
+            </button>
+        </div>
+
         {{/simple-form}}
       </div>
-
+    </div>
   </div>
 </div>
 

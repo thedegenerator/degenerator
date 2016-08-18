@@ -12,7 +12,12 @@
 }
 
 body,
-h1,h2,h3,h4,h5,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   margin: 0;
 }
 
@@ -21,25 +26,34 @@ a {
   text-decoration: none;
 }
 
-.text-input{
+.text-input {
   font-size: 2rem;
   width: 100%;
   outline: red;
   background: black;
-  color:red;
-  border: .2rem solid transparent ;
-  &:active{
+  color: red;
+  border: 0.2rem solid transparent;
 
-  background: red;
+  &:active {
+    background: red;
   }
-  &:focus{
-    border-color: red ;
+
+  &:focus {
+    border-color: red;
   }
 }
-.btn-click:active{
+
+.btn-click:active {
   background: black;
-  color:white;
+  color: white;
 }
-*:focus, input:focus{
+
+*:focus,
+input:focus {
   outline-color: red;
+}
+
+button {
+  background: none;
+  width: 100%;
 }
