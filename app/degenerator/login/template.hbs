@@ -1,21 +1,20 @@
 <div class="app-login">
   <div class="hero__login">
-
-      <div class="container__login">
-        <div class="login__box">
-            <h2 class="login__title">login</h2>
-{{#simple-form onsubmit=(action "loginUser" as |formvalues|)}}
-            {{input class="input__login text-input" type="text" placeholder="email" value=email}}
-            {{input class="input__login text-input" type="password" placeholder="password" value=password}}
-            <div class="btn-box__login">
-              {{#link-to 'degenerator.main' class="login-btn btn-click"}}
-                login
-              {{/link-to}}
+    <div class="container__login">
+      <div class="login__box">
+        <h2 class="login__title">login</h2>
+        {{#simple-form onsubmit=(action "loginUser") as |formValues|}}
+          {{input class="input__login text-input" type="text" placeholder="email" value=email}}
+          {{input class="input__login text-input" type="password" placeholder="password" value=password}}
+          <div class="btn-box__login">
+            {{#link-to 'degenerator.main' class="login-btn btn-click" }}
+              login
+            {{/link-to}}
           </div>
-          {{/simpleform}}
-        </div>
+        {{/simple-form}}
       </div>
 
   </div>
 </div>
+
 {{outlet}}

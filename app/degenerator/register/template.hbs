@@ -3,7 +3,8 @@
     <div class="content__register">
       <h2 class="title__register">ready to start degenerating?</h2>
       {{#simple-form onsubmit=(action "registerUser") as |formValues|}}
-        {{input class="input__login input__register text-input" type="text" placeholder="email" value=email}} {{input class="input__login input__register text-input" type="password" placeholder="password" value=password}}
+        {{input class="input__login input__register text-input" type="text" placeholder="email" value=email}}
+        {{input class="input__login input__register text-input" type="password" placeholder="password" value=password}}
         <div class="btn-container__register btn-click">
           register
         </div>
