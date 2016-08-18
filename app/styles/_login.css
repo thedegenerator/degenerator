@@ -1,54 +1,40 @@
-.login-btn {
-  padding: .3rem;
-  width: 100%;
-  border: .2rem solid #000;
-  font-size: 1rem;
-  background: #fff;
-  color: #000;
-  font-weight: bold;
-}
-
 .hero__login {
   display: flex;
+  height: 100vh;
 }
-
 .container__login {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
-
 .login__box {
-  color: #000;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: .2rem;
   border: .2rem solid #000;
-  background: #fff;
 }
 .login__title {
   margin: 1rem 0;
 }
-
 .input__login {
-  margin-bottom: 1rem;
-  outline: red;
-  padding: .3rem;
-  border: none;
   width: 100%;
-
-}
-
-.tagline__login {
-  margin: .5rem 0;
+  padding: .5rem 0;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 .btn-box__login {
   display: flex;
-  margin-top: 1rem;
-  width: 100%;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
 }
 .login-btn {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: .2rem solid #000;
+  padding: .5rem;
   text-align: center;
-  text-decoration: none;
 }
