@@ -1,10 +1,10 @@
 <div class="app-login">
   <div class="hero__login">
-    <div class="center">
+
       <div class="container__login">
         <div class="login__box">
             <h2 class="login__title">login</h2>
-
+{{#simple-form onsubmit=(action "loginUser" as |formvalues|)}}
             {{input class="input__login text-input" type="text" placeholder="email" value=email}}
             {{input class="input__login text-input" type="password" placeholder="password" value=password}}
             <div class="btn-box__login">
@@ -12,9 +12,10 @@
                 login
               {{/link-to}}
           </div>
+          {{/simpleform}}
         </div>
       </div>
-    </div>
+
   </div>
 </div>
 {{outlet}}
