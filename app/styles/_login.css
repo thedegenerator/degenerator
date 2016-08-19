@@ -1,6 +1,7 @@
 .hero__login {
   display: flex;
   height: 100vh;
+  position: relative;
 }
 .container__login {
   display: flex;
