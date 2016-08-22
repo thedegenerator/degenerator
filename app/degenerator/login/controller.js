@@ -8,7 +8,11 @@ export default Ember.Controller.extend({
      const authenticator = 'authenticator:application';
 
      this.get('session').authenticate(authenticator,
-       { identification: formValues.email, password: formValues.password });
+       { identification: formValues.email, password: formValues.password })
+       .then(() => {
+         this.transitionToRoute('degenerator.upload');
+         console.log('working');
+       });
    },
 
     },

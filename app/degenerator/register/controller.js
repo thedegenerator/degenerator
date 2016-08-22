@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
       const newUser = this.store.createRecord('user', formValues);
 
       newUser.save().then(() => {
-        this.transitionToRoute('login');
+        this.transitionToRoute('degenerator.login');
       });
     },
 
