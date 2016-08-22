@@ -2,6 +2,10 @@
 
 module.exports = function(environment) {
   var ENV = {
+    DS: {
+      host: 'http://localhost:3333',
+      namespace: '',
+    },
     modulePrefix: 'degenerator-ui',
     environment: environment,
     rootURL: '/',

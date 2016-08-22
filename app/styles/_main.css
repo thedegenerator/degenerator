@@ -10,6 +10,7 @@
 }
 
 .post-card {
+  background: white;
   margin-top: 1rem;
   border: black 0.3rem solid;
   padding: 1rem;
