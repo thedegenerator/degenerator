@@ -16,6 +16,8 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 100;
 
   width: 20rem;
 
