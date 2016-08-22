@@ -1,6 +1,6 @@
 <div class="upload-container">
   <div class="upload-container__inner">
-
+    {{#simple-form class="upload-form" onsubmit=(action "uploadImg") as |uploadInfo|}}
     <div class="upload-card">
       {{!-- <label class="image-title-lable upload-card__item" for="imageTitle">Title</label> --}}
       {{input class="image-title-input input" type="text" name="imageTitle" id="" placeholder="Title For Image" }}
@@ -43,6 +43,7 @@
       </div>
       <button class="submit-btn upload-card__item">SUBMIT</button>
     </div>
+    {{/simple-form}}
   </div>
 
 </div>
