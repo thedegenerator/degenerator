@@ -2,7 +2,7 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   title:DS.attr('string'),
-degenThresh: DS.attr('number'),
+degenThresh: DS.attr('string'),
 addHomepage:DS.attr('boolean'),
 dither:DS.attr('boolean'),
 emboss:DS.attr('boolean'),
