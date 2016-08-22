@@ -115,9 +115,8 @@ function resize(e) {
 }
 
 function mouseDown(e) {
-  // img.src = null;
-  e.stopPropagation();
-  e.preventDefault();
+
+
 
   animating = !animating;
   if (animating) {
