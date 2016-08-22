@@ -12,5 +12,4 @@ implode:DS.attr('boolean'),
 cycle:DS.attr('boolean'),
 uploadFile:DS.attr('string')
 
-
 });

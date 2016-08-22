@@ -10,6 +10,7 @@
   width: 100%;
 }
 .login__box {
+  background: white;
   padding: 2rem;
   display: flex;
   flex-direction: column;

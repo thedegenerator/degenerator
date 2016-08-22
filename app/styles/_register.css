@@ -10,6 +10,7 @@
   margin: auto;
 }
 .content__register {
+  background: white;
   display: flex;
   flex-direction: column;
   border: .2rem solid #000;
