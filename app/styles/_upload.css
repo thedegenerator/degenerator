@@ -16,8 +16,7 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  /*flex-grow: 1;*/
+
   width: 20rem;
 
   &__item {
