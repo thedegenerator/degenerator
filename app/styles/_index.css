@@ -3,16 +3,21 @@ body {
 }
 
 .header__index {
-  background: #000;
-  padding: 2rem 3rem;
   display: flex;
-  width: 100%;
+  align-items: center;
   justify-content: space-between;
-  top: 0;
+  width: 100%;
+  padding: 2rem 3rem;
+  background: #000;
+  margin: auto;
 }
-
+.header__left {
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: 15rem;
+}
 .title__index {
-  margin: 0;
+  margin: 0 1rem 0 0;
   color: #fff;
 
   &:hover {
@@ -24,18 +29,13 @@ body {
 }
 
 .de {
-  color: #f00
-
-
-}
-
-.tagline__index {
-  margin: .5rem 0;
-  color: #fff;
+  color: #f00;
 }
 
 .header__right {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: 1rem;
 }
 
 .post, .login-link, .register-link {

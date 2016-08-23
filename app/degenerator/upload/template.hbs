@@ -3,7 +3,7 @@
     {{#simple-form class="upload-form" onsubmit=(action "uploadImg") as |uploadInfo|}}
       <div class="upload-card">
         {{input class="image-title-input input" type="text" name="imageTitle" id="" placeholder="Title For Image" value=uploadInfo.title }}
-        <label class="view-threshold-lable upload-card__item" for="viewThreshold">Veiws till degeneration <span class="view-number">{{uploadInfo.degenThresh}}</span></label>
+        <label class="view-threshold-lable upload-card__item" for="viewThreshold">Views 'til degeneration <span class="view-number">{{uploadInfo.degenThresh}}</span></label>
         {{input class="view-threshold-input slider" type="range" min="10" max="50" name="viewThreshold"  placeholder="0" value=uploadInfo.degenThresh}}
         <div class="add-to-homepage upload-card__item">
           <label for="add-to-homepage__title"> Make Secret link?</label>

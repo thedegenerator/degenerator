@@ -34,7 +34,8 @@ a {
   background: black;
   color: red;
   border: 0.2rem solid transparent;
-  padding-left: 1rem;
+  margin-bottom: 1rem;
+  padding: .5rem 0;
 
   &:active {
     background: red;
@@ -58,4 +59,5 @@ input:focus {
 button {
   background: none;
   width: 100%;
+  border: .2rem solid #000;
 }
