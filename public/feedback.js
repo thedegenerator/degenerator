@@ -18,13 +18,7 @@ tick();
 var translateX;
 var translateY;
 var translate0 = 0;
-var translate1 = 1;
-var rotate0 = .10;
-var rotate1 = 0;
-var scale0 = 20;
-var scale1 = 10;
-var sizeX = 100;
-var sizeY = 100;
+
 
 
 
@@ -58,10 +52,10 @@ function drawScene() {
 
     ctx.globalCompositeOperation = "difference";
     ctx.translate(centerX, centerY);
-    ctx.rotate(0.0);
+    ctx.rotate(0.001);
     ctx.translate(-centerX, -centerY);
     ctx.translate(translate0, -translate0);
-    ctx.scale(1.00, 1.00);
+    ctx.scale(1.0001, .999);
     ctx.drawImage(cachedTexture, 0, 0);
 
 
@@ -73,18 +67,16 @@ function drawScene() {
 
     var img = new Image();
     img.src = "../images/default.png";
-    ctx.globalCompositeOperation = "normalize";
+    ctx.globalCompositeOperation = "difference";
         ctx.translate(0, 0);
     ctx.drawImage(img,translateX,translateY);
 
     ctx.restore();
   });
 
-  context.globalCompositeOperation = "source-out";
-  context.fillStyle = "rgba(255,255,255,.1)";
-  context.fillRect(0, width, height,width);
-  context.globalCompositeOperation = "hard-light";
-  context.drawImage(cachedTexture, 0, 0);
+
+  context.globalCompositeOperation = "difference";
+  context.drawImage(cachedTexture, 0, 1);
 
 
 
@@ -120,8 +112,11 @@ function mouseDown(e) {
 
   animating = !animating;
   if (animating) {
-    direction = 1;
-    time = performance.now() * 1;
+    direction = 0;
+    for (var i = 0; i < 200; i++) {
+
+      time = performance.now() / i ;
+    }
 
   }
 }
