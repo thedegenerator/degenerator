@@ -5,7 +5,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-height: 30vh;
 }
 .nav__degenerate {
   display: flex;
@@ -40,17 +39,36 @@
   margin: auto;
   padding: 0 2rem;
 }
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 70rem;
+  width: 100%;
+  padding: 0 2rem;
+}
+
 .img-wrap__degenerate {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.img-container__degenerate {
+.img-frame__degenerate {
   width: 100%;
-  max-height: 10rem;
+  height: 100vh;
 }
 .img__degenerate {
   width: 100%;
-  max-height: 33rem;
+  height: 100%;
+}
+.user__degenerate {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: #000;
+
 }

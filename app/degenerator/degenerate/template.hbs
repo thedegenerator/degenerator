@@ -5,16 +5,20 @@
         {{#link-to "degenerator.main" class="back__degenerate" }}
           go back
         {{/link-to}}
-        <p class="title__degenerate">the lumberjack</p>
+
+        <p class="title__degenerate">{{ uploadInfo.title }}</p>
         <p class="views__degenerate">753 views</p>
       </div>
     </div>
     <div class="img-wrap__degenerate">
-      <div class="container__degenerate">
-        <div class="img-container__degenerate">
-          <img class="img__degenerate" src="https://s-media-cache-ak0.pinimg.com/236x/36/62/af/3662afc9550170d09fb590971b0cf512.jpg" alt="">
+      <div class="img-container">
+        <div class="img-frame__degenerate">
+          <img class="img__degenerate" src="https://cdn.pastemagazine.com/www/system/images/photo_albums/liam-neesons-memes/large/iz8dk.jpg?1384968217" alt="">
         </div>
       </div>
+    </div>
+    <div class="user__degenerate">
+      <p>Submitted by: {{ users.username }}</p>
     </div>
   </div>
 </div>

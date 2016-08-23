@@ -1,7 +1,6 @@
 .hero__login {
   display: flex;
   height: 90vh;
-  position: relative;
 }
 .container__login {
   display: flex;
@@ -15,23 +14,18 @@
   display: flex;
   flex-direction: column;
   border: .2rem solid #000;
+  margin: 1rem;
 }
 .login__title {
   margin: 1rem 0;
 }
-.input__login {
-  width: 100%;
-  padding: .5rem 0;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
+
 .btn-box__login {
   display: flex;
   margin: 1rem 0;
   font-size: 1.5rem;
   font-weight: bold;
-  text-align: center;
-
+  justify-content: center;
 }
 .login-btn {
   width: 100%;
