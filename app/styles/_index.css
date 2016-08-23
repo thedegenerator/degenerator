@@ -1,3 +1,16 @@
+.title-group{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin: auto;
+}
+.home-title{
+  width: calc(100%/4);
+  color:white;
+
+}
+
 body {
   margin: 0;
 }
