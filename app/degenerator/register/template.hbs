@@ -1,5 +1,15 @@
 <div class="app-register">
   <div class="hero__register">
+    <div class="hidden-alert">
+      <div class="alert-box">
+        <div class="alert-message">
+        <p>register failed!</p>
+        </div>
+        {{#link-to 'degenerator' class="alert-transfer"}}
+          username or email already exists
+          {{/link-to}}
+      </div>
+    </div>
     <div class="container__register">
       <div class="register__box">
         <h2 class="register__title">ready to start degenerating?</h2>
