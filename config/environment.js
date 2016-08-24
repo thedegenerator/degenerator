@@ -6,6 +6,19 @@ module.exports = function(environment) {
       host: 'http://localhost:3333',
       namespace: '',
     },
+  flashMessageDefaults: {
+    // flash message defaults
+    timeout: 5000,
+    extendedTimeout: 0,
+    priority: 200,
+    sticky: true,
+    showProgress: true,
+
+    // service defaults
+    type: 'alpaca',
+    types: [ 'alpaca', 'notice', 'foobar' ],
+    preventDuplicates: false
+  },
     modulePrefix: 'degenerator-ui',
     environment: environment,
     rootURL: '/',
@@ -52,4 +65,5 @@ module.exports = function(environment) {
   }
 
   return ENV;
+
 };

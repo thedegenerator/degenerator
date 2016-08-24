@@ -10,6 +10,7 @@ export default Ember.Controller.extend({
      this.get('session').authenticate(authenticator,
        { identification: formValues.email, password: formValues.password })
        .then(() => {
+         this.toggleProperty('.hidden-alert', '.alert-overlay');
          this.transitionToRoute('degenerator.upload');
          console.log('working');
        });
