@@ -4,10 +4,10 @@
       <div class="hidden-alert">
         <div class="alert-box">
           <div class="alert-message">
-          <p>login successful!</p>
+          <p>login failed!</p>
           </div>
-          {{#link-to 'degenerator.upload' class="alert-transfer"}}
-            Ready to post
+          {{#link-to 'degenerator.login' class="alert-transfer"}}
+            try again
             {{/link-to}}
         </div>
       </div>
@@ -16,7 +16,7 @@
         <h2 class="login__title">login</h2>
         {{#simple-form onsubmit=(action "loginUser") as |formValues|}}
           {{input class="text-input" type="text" placeholder="email" value=formValues.email}} {{input class="text-input" type="password" placeholder="password" value=formValues.password}}
-          <div class="btn-box__login" {{action "loggedIn"}}>
+          <div class="btn-box__login" >
 
             <button type='submit' class="login-btn btn-click">
               login

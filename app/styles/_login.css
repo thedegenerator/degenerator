@@ -1,3 +1,9 @@
+@keyframes slideup{
+from{top:50%;}
+to { top:25%;}
+}
+
+
 .hero__login {
   display: flex;
   height: 90vh;
@@ -17,20 +23,22 @@
   display: none;
 }
 .alert-box {
+  animation: slideup .4s ;
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 65%;
   min-width: 15rem;
-  padding: 3rem;
+  padding: 2rem;
   border: .2rem solid #000;
+  border-bottom: none;
   position: fixed;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fff;
   opacity: 1;
-  z-index: 11;
+z-index: -1;
 }
 .alert-message {
   font-size: 2rem;
