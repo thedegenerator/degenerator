@@ -67,7 +67,7 @@ function drawScene() {
 
     var img = new Image();
     img.src = "../images/default.png";
-    ctx.globalCompositeOperation = "difference";
+    ctx.globalCompositeOperation = "xor";
         ctx.translate(0, 0);
     ctx.drawImage(img,translateX,translateY);
 

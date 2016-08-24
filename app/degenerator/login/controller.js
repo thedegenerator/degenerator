@@ -9,10 +9,23 @@ export default Ember.Controller.extend({
 
      this.get('session').authenticate(authenticator,
        { identification: formValues.email, password: formValues.password })
+
+
        .then(() => {
-         this.toggleProperty('.hidden-alert', '.alert-overlay');
+
          this.transitionToRoute('degenerator.upload');
          console.log('working');
+       })
+       .catch(() => {
+        const errorBox = document.querySelector('.hidden-alert');
+        const loginBox = document.querySelector('.login__box');
+        errorBox.classList.toggle('hidden-alert');
+        loginBox.addEventListener('click',function(){
+          console.log('cki');
+          errorBox.classList='hidden-alert';
+        });
+
+
        });
    },
 
