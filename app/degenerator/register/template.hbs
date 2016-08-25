@@ -3,7 +3,7 @@
     <div class="hidden-alert">
       <div class="alert-box">
         <div class="alert-message">
-        <p>register failed!</p>
+        <p>registation failed!</p>
         </div>
         {{#link-to 'degenerator' class="alert-transfer"}}
           username or email already exists
@@ -15,7 +15,7 @@
         <h2 class="register__title">ready to start degenerating?</h2>
         {{#simple-form onsubmit=(action "registerUser") as |formValues|}}
           {{input class="text-input" type="text" placeholder="username" value=formValues.username}}
-          {{input class="text-input" type="text" placeholder="email" value=formValues.email}}
+          {{input class="text-input" type="email" placeholder="email" value=formValues.email}}
           {{input class="text-input" type="password" placeholder="password" value=formValues.password}}
           <div class="btn-box__register">
           <button type="submit" class="register-btn btn-click">

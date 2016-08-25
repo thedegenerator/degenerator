@@ -35,7 +35,8 @@ a {
   color: red;
   border: 0.2rem solid transparent;
   margin-bottom: 1rem;
-  padding: .5rem 0;
+  padding: .5rem 1rem;
+  text-transform: none;
 
   &:active {
     background: red;
@@ -43,6 +44,9 @@ a {
 
   &:focus {
     border-color: red;
+  }
+  &::selection{
+    background: white;
   }
 }
 
