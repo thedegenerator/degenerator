@@ -28,15 +28,15 @@ to { top:25%;}
   justify-content: center;
   flex-direction: column;
   width: 65%;
+  max-width: 30rem;
   min-width: 15rem;
-  padding: 2rem;
+  padding: 1rem 2rem;
   border: .2rem solid #000;
-  border-bottom: none;
   position: fixed;
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
+  background: red;
   opacity: 1;
 z-index: -1;
 }

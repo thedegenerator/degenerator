@@ -2,13 +2,12 @@
   <div class="upload-container__inner">
     {{#simple-form class="upload-form" onsubmit=(action "uploadImg") as |uploadInfo|}}
       <div class="upload-card">
+
         {{input class="image-title-input input" type="text" name="imageTitle" id="" placeholder="Title For Image" value=uploadInfo.title }}
         <label class="view-threshold-lable upload-card__item" for="viewThreshold">Views 'til degeneration <span class="view-number">{{uploadInfo.degenThresh}}</span></label>
         {{input class="view-threshold-input slider" type="range" min="10" max="50" name="viewThreshold"  placeholder="0" value=uploadInfo.degenThresh}}
-        <div class="add-to-homepage upload-card__item">
-          <label for="add-to-homepage__title"> Make Secret link?</label>
-        {{input id="add-to-homepage__title"type="checkbox" name="" class="addToHomepage" checked=uploadInfo.addHomepage}}
-        </div>
+
+
 
         <div class="checkbox-group upload-card__item">
           <div class="checkbox-group__item">
@@ -36,11 +35,9 @@
             {{input id="cycle" name="cycle" type="checkbox" class="style-checkbox" checked=uploadInfo.cycle}}
           </div>
         </div>
+
         <div class="browse-group upload-card__item">
-
-          <label id="file-input-lable" for="file-input">Choose File</label>
-          <input   id="file-input" type="file" class="browse-btn" value="browse">
-
+          <label {{action "selectPhoto"}}>Choose File</label>
         </div>
         <button type="submit" class="submit-btn upload-card__item">SUBMIT</button>
       </div>
