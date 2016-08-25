@@ -15,8 +15,8 @@
   padding: 2rem;
   border: .2rem solid #000;
   border-bottom: none;
-  position: fixed;
-  top: 25%;
+  position: absolute;
+  top: 23%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fff;

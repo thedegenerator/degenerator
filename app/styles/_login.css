@@ -22,7 +22,7 @@ to { top:25%;}
 .hidden-alert {
   display: none;
 }
-.alert-box {
+.alert-box-login {
   animation: slideup .4s ;
   display: flex;
   justify-content: center;
@@ -33,12 +33,12 @@ to { top:25%;}
   padding: 1rem 2rem;
   border: .2rem solid #000;
   position: fixed;
-  top: 25%;
+  top: 26%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: red;
+  background: white;
   opacity: 1;
-z-index: -1;
+  z-index: -1;
 }
 .alert-message {
   font-size: 2rem;
