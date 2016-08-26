@@ -12,10 +12,11 @@ export default Ember.Controller.extend({
   actions:{
     selectPhoto() {
       this.get('filesystem').prompt().then((upload) => {
-        this.set('uploadFile', upload);
+        this.set('uploadFile', upload[0]);
       });
     },
     uploadImg(formValues){
+
       if (!this.uploadFile) {
         return alert('Yo! Upload a file!');
       }
