@@ -27,8 +27,6 @@ var translate0 = 0;
 
 
 window.addEventListener("resize", resize, false);
-document.addEventListener("mousedown", mouseDown, false);
-
 function renderToCache(renderFunction) {
   var buffer = document.createElement('canvas');
   buffer.width = width;

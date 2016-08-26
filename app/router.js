@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('main');
     this.route('degenerate');
   });
+  this.route('gmbox');
 });
 
 export default Router;
