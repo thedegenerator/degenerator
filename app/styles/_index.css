@@ -26,6 +26,7 @@ body {
 }
 .header__left {
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   min-width: 15rem;
 }

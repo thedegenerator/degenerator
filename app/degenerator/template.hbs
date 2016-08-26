@@ -3,11 +3,11 @@
     {{#link-to 'degenerator.main'}}
       <h2 class="title__index">the [<span class="de">de</span>]generator</h2>
     {{/link-to}}
+    <div class="username-display">
+      <h2>Hello, {{ session.currentUser.username }} !</h2>
+    </div>
   </div>
 
-  <div class="username-display">
-    <p>Hello, {{ session.currentUser.username }} !</p>
-  </div>
 
   <div class="header__right">
     {{#link-to 'degenerator.upload'}}
