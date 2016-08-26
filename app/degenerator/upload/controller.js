@@ -3,6 +3,7 @@ import config from 'degenerator-ui/config/environment';
 
 export default Ember.Controller.extend({
   filesystem: Ember.inject.service(),
+  session: Ember.inject.service(),
 
   init() {
     this._super(...arguments);
@@ -16,6 +17,7 @@ export default Ember.Controller.extend({
       });
     },
     uploadImg(formValues){
+      const token = this.get('session.session.content.authenticated.access_token');
 
       if (!this.uploadFile) {
         return alert('Yo! Upload a file!');
@@ -25,6 +27,7 @@ export default Ember.Controller.extend({
         method: 'POST',
         headers: {
           accept: 'application/json',
+          Authorization: `Bearer ${token}`,
         },
         body: {
           ...formValues,
