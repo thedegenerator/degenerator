@@ -5,6 +5,10 @@
     {{/link-to}}
   </div>
 
+  <div class="username-display">
+    <p>Hello, {{ session.currentUser.username }} !</p>
+  </div>
+
   <div class="header__right">
     {{#link-to 'degenerator.upload'}}
       <h2 class="post">post</h2>
