@@ -40,6 +40,10 @@ module.exports = function(environment) {
     serverTokenEndpoint: `${ENV.DS.host}/token`,
     tokenPropertyName: 'access_token',
   };
+  ENV['ember-simple-auth'] = {
+    baseURL: '/',
+    routeAfterAuthentication: 'upload'
+  };
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
