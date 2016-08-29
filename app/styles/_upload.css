@@ -204,3 +204,8 @@ input[type=range]::-ms-slider-runnable-track {
   position: relative;
   border-bottom: 0.2rem black solid;
 }
+
+
+.not-logged-in{background: red;
+color:white;
+opacity: .7}

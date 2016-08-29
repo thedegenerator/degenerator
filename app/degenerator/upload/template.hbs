@@ -1,6 +1,8 @@
 <div class="upload-container">
   <div class="upload-container__inner">
+    {{#if session.isAuthenticated}}
     {{#simple-form class="upload-form" onsubmit=(action "uploadImg") as |uploadInfo|}}
+
       <div class="upload-card">
 
         {{input class="image-title-input input" type="text" name="imageTitle" id="" placeholder="Title For Image" value=uploadInfo.title }}
@@ -42,6 +44,9 @@
         <button type="submit" class="submit-btn upload-card__item">SUBMIT</button>
       </div>
     {{/simple-form}}
+    {{else}}
+    <h1 class="not-logged-in"> YOU MUST LOG IN TO POST</h1>
+    {{/if}}
 
   </div>
 
