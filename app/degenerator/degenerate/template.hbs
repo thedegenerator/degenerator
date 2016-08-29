@@ -13,13 +13,13 @@
     <div class="img-wrap__degenerate">
       <div class="img-container">
         <div class="img-frame__degenerate">
-          <img class="img__degenerate" src="http://localhost:3333/image/{{model.id}}.{{model.extension}}" alt="">
+          <img class="img__degenerate" src="http://localhost:3333/image/{{model.id}}-expose.{{model.extension}}" alt="">
         </div>
       </div>
     </div>
     <div class="user__degenerate">
       {{log model}}
-      <p>Submitted by: {{ model.username }}</p>
+      <p>Submitted by: {{ model.user.username }}</p>
     </div>
   </div>
 </div>
