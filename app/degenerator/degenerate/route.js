@@ -2,6 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model({ id }) {
-    return this.store.findRecord('degenerate', id);
+    return this.store.findRecord('upload', id);
   }
 });

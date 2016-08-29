@@ -65,7 +65,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+ENV.DS.host = "https://degenerator.heroku.com/";
   }
 
   return ENV;

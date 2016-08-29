@@ -17,7 +17,8 @@
           <p><span class="views-left">5 </span>views left out of 20</p>
         </div>
         </div>
-        {{#link-to 'degenerator.degenerate'}}
+        {{log upload.id}}
+        {{#link-to 'degenerator.degenerate' upload.id}}
 
         <div class="view-btn">click to view</div>
         {{/link-to}}
