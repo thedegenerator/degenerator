@@ -6,8 +6,8 @@
           <img class="img-frame__img" src="http://localhost:3333/image/{{upload.id}}.{{upload.extension}}" alt="">
         </div>
 
-
         <h2 class="post-card__title">{{upload.title}}</h2>
+        <div class="black-wrapper">
         <div class="degeneration-type">
           <p class="degeneration-type__item">Dither</p>
           <p class="degeneration-type__item">Emboss</p>
@@ -15,6 +15,7 @@
         </div>
         <div class="view-counts">
           <p><span class="views-left">5 </span>views left out of 20</p>
+        </div>
         </div>
         {{#link-to 'degenerator.degenerate'}}
 

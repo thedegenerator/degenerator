@@ -2,12 +2,12 @@
   &__inner {
     max-width: 60rem;
     margin: auto;
-    // background: #666;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 
-    // overflow: scroll;
+
   }
 }
 
@@ -17,13 +17,16 @@
   border: black 0.3rem solid;
   padding: 1rem;
   max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   img{
     width: 100%;
   }
 
   &__title {
     color: red;
-    // padding: .5rem;
+
   }
 }
 
@@ -51,8 +54,7 @@
 .img-frame {
   border: black 0.3rem solid;
   width: 100%;
-  // display: flex;
-  // justify-content: space-around;
+
 
   &__frame {
     text-align: center;
@@ -60,7 +62,7 @@
 }
 
 .view-counts {
-  // padding-top:1rem;
+
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   background: black;
