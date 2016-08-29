@@ -12,7 +12,7 @@ Router.map(function() {
     this.route('register');
     this.route('upload');
     this.route('main');
-    this.route('degenerate');
+    this.route('degenerate',{path: '/:degenerate'});
   });
 
 });

@@ -3,9 +3,11 @@
     {{#link-to 'degenerator.main'}}
       <h2 class="title__index">the [<span class="de">de</span>]generator</h2>
     {{/link-to}}
+    {{#if session.isAuthenticated}}
     <div class="username-display">
       <h2>Hello, {{ session.currentUser.username }} !</h2>
     </div>
+    {{/if}}
   </div>
 
 
@@ -14,10 +16,15 @@
       <h2 class="post">post</h2>
     {{/link-to}}
 
+{{#if session.isAuthenticated}}
+  {{#link-to 'degenerator.login'}}
+<h2 class="login-link"{{action 'invalidateSession'}}>Logout</h2>
+  {{/link-to}}
+{{else}}
     {{#link-to 'degenerator.login'}}
       <h2 class="login-link">login</h2>
     {{/link-to}}
-
+ {{/if}}
     {{#link-to 'degenerator.register'}}
       <h2 class="register-link">register</h2>
     {{/link-to}}
