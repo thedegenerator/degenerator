@@ -1,3 +1,11 @@
+@keyframes disappear {
+from {color: white;}
+to {color: black;}
+from {color: black;}
+to {color: white;}
+}
+
+
 .title-group{
   display: flex;
   flex-wrap: wrap;
@@ -6,9 +14,10 @@
   margin: auto;
 }
 .home-title{
+  animation: disappear 15s;
+  z-index: -101;
   width: calc(100%/4);
-  color:white;
-
+  color: #fff;
 }
 
 body {

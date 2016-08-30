@@ -15,6 +15,7 @@
   background: white;
   margin-top: 1rem;
   border: black 0.3rem solid;
+  color: #f00;
   padding: 1rem;
   max-width: 25rem;
   display: flex;
@@ -23,11 +24,22 @@
   img{
     width: 100%;
   }
+ &__title {
 
-  &__title {
-    color: red;
-
+  &--green {
+    color: #04cf00;
   }
+  &--yellow {
+    color: #e7eb2d;
+  }
+  &--orange {
+    color: #ff8d06;
+  }
+  &--red95 {
+    color: #f00;
+    opacity: .5;
+  }
+}
 }
 
 .degeneration-type {

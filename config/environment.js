@@ -42,7 +42,7 @@ module.exports = function(environment) {
   };
   ENV['ember-simple-auth'] = {
     baseURL: '/',
-    routeAfterAuthentication: 'upload'
+    routeAfterAuthentication: 'degenerator.upload'
   };
 
   if (environment === 'development') {

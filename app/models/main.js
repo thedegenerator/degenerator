@@ -22,7 +22,7 @@ export default DS.Model.extend({
       return 'orange';
   } else if (ratio < .91) {
       return 'red';
-  } else if (ratio < 1.1) {
+  } else if (ratio < 1) {
       return 'red95';
     }
   }),

@@ -23,6 +23,19 @@
   color: #f00;
   padding: .5rem 1rem;
   margin: 0 .1rem;
+  &--green {
+    color: #04cf00;
+  }
+  &--yellow {
+    color: #e7eb2d;
+  }
+  &--orange {
+    color: #ff8d06;
+  }
+  &--red95 {
+    color: #f00;
+    opacity: .5;
+  }
 }
 .views__degenerate {
   background: #000;
