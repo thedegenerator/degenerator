@@ -1,7 +1,7 @@
 <div class="main-container">
   <div class="main-container__inner">
     {{#each model as |upload|}}
-      <div class="post-card" {{action "remove"}}>
+      <div class="post-card">
         <div class="img-frame">
           <img class="img-frame__img" src="http://localhost:3333/image/{{upload.id}}.{{upload.extension}}" alt="">
         </div>
