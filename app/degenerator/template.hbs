@@ -25,9 +25,14 @@
       <h2 class="login-link">login</h2>
     {{/link-to}}
  {{/if}}
+
+ {{#if session.isAuthenticated}}
+
+{{else}}
     {{#link-to 'degenerator.register'}}
       <h2 class="register-link">register</h2>
     {{/link-to}}
+    {{/if}}
   </div>
 </div>
 

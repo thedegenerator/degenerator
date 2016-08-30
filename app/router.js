@@ -7,12 +7,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('degenerator', function(){
+  this.route('degenerator',{path: '/'}, function(){
     this.route('login');
     this.route('register');
     this.route('upload');
     this.route('main');
-    this.route('degenerate',{path: '/:degenerate'});
+    this.route('degenerate',{path: '/:id/degenerate'});
   });
 
 });

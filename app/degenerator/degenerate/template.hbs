@@ -6,19 +6,21 @@
           go back
         {{/link-to}}
 
-        <p class="title__degenerate">{{ uploadInfo.title }}</p>
-        <p class="views__degenerate">753 views</p>
+        <p class="title__degenerate">{{ model.title }}</p>
+        <p class="views__degenerate">{{model.hits}} views</p>
       </div>
     </div>
     <div class="img-wrap__degenerate">
       <div class="img-container">
         <div class="img-frame__degenerate">
-          <img class="img__degenerate" src="https://cdn.pastemagazine.com/www/system/images/photo_albums/liam-neesons-memes/large/iz8dk.jpg?1384968217" alt="">
+<img src="{{model.exposeUrl}}" class="img__degenerate">
+          {{!-- {{lazy-image url=model.exposeUrl class="img__degenerate" errorText='Something went wrong.'}} --}}
         </div>
       </div>
     </div>
     <div class="user__degenerate">
-      <p>Submitted by: {{ users.username }}</p>
+      {{log model}}
+      <p>Submitted by: {{ model.user.username }}</p>
     </div>
   </div>
 </div>

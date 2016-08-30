@@ -1,11 +1,13 @@
 <div class="upload-container">
   <div class="upload-container__inner">
-    {{#simple-form class="upload-form" onsubmit=(action "uploadImg") as |uploadInfo|}}
+    {{#if session.isAuthenticated}}
+    {{#simple-form class="upload-form" startingValues=(hash threshold=20) onsubmit=(action "uploadImg") as |uploadInfo|}}
+
       <div class="upload-card">
 
         {{input class="image-title-input input" type="text" name="imageTitle" id="" placeholder="Title For Image" value=uploadInfo.title }}
-        <label class="view-threshold-lable upload-card__item" for="viewThreshold">Views 'til degeneration <span class="view-number">{{uploadInfo.degenThresh}}</span></label>
-        {{input class="view-threshold-input slider" type="range" min="10" max="50" name="viewThreshold"  placeholder="0" value=uploadInfo.degenThresh}}
+        <label class="view-threshold-lable upload-card__item" for="viewThreshold">Views 'til degeneration <span class="view-number">{{uploadInfo.threshold}}</span></label>
+        {{input class="view-threshold-input slider" type="range" min="10" max="50" name="viewThreshold"  placeholder="0" value=uploadInfo.threshold}}
 
 
 
@@ -42,6 +44,9 @@
         <button type="submit" class="submit-btn upload-card__item">SUBMIT</button>
       </div>
     {{/simple-form}}
+    {{else}}
+    <h1 class="not-logged-in"> YOU MUST LOG IN TO POST</h1>
+    {{/if}}
 
   </div>
 

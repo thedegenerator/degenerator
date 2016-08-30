@@ -16,7 +16,8 @@ export default Ember.Controller.extend({
          this.transitionToRoute('degenerator.upload');
          console.log('working');
        })
-       .catch(() => {
+       .catch((reason) => {
+         console.log(reason);
         const errorBox = document.querySelector('.hidden-alert');
         const loginBox = document.querySelector('.login__box');
         errorBox.classList.toggle('hidden-alert');

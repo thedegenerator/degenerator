@@ -11,7 +11,8 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember test",
-    "lintfix": "eslint app --fix && eslint tests --fix"
+    "lintfix": "eslint app --fix && eslint tests --fix",
+    "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge list degenerator.suge.sh"
   },
   "repository": "",
   "engines": {
@@ -46,6 +47,7 @@
     "ember-export-application-global": "^1.0.5",
     "ember-filesystem": "0.1.2",
     "ember-font-awesome": "2.1.1",
+    "ember-lazy-image": "0.0.15",
     "ember-load-initializers": "^0.5.1",
     "ember-moment": "7.0.0-beta.3",
     "ember-network": "0.3.0",
