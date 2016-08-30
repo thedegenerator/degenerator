@@ -12,30 +12,12 @@
 
 
         <div class="checkbox-group upload-card__item">
-          <div class="checkbox-group__item">
-            <label for="dither">dither</label>
-            {{input id="dither" name="dither" type="checkbox" class="style-checkbox" checked=uploadInfo.dither}}
-          </div>
-          <div class="checkbox-group__item">
-            <label for="emboss">emboss</label>
-            {{input id="emboss" name="emboss" type="checkbox" class="style-checkbox" checked=uploadInfo.emboss}}
-          </div>
-          <div class="checkbox-group__item">
-            <label for="sharpen">sharpen</label>
-            {{input id="sharpen" name="sharpen" type="checkbox" class="style-checkbox" checked=uploadInfo.sharpen}}
-          </div>
-          <div class="checkbox-group__item">
-            <label for="blur">blur</label>
-            {{input id="blur" name="blur" type="checkbox" class="style-checkbox" checked=uploadInfo.blur}}
-          </div>
-          <div class="checkbox-group__item">
-            <label for="implode">implode</label>
-            {{input id="implode" name="implode" type="checkbox" class="style-checkbox" checked=uploadInfo.implode}}
-          </div>
-          <div class="checkbox-group__item">
-            <label for="cycle">cycle</label>
-            {{input id="cycle" name="cycle" type="checkbox" class="style-checkbox" checked=uploadInfo.cycle}}
-          </div>
+          {{#each filterTypes as |filterType|}}
+            <div class="checkbox-group__item">
+              <label >{{filterType}}</label>
+              {{input id=filterType name=filterType type="checkbox" class="style-checkbox" checked=(mut (get uploadInfo filterType))}}
+            </div>
+          {{/each}}
         </div>
 
         <div class="browse-group upload-card__item">

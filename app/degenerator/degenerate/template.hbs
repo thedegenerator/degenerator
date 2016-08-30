@@ -10,19 +10,27 @@
         <p class="views__degenerate">{{model.hits}} views</p>
       </div>
     </div>
+
+{{!-- {{#if (gte model.hits model.threshold )}} <h1>View threshold met</h1>
+{{else}} --}}
+
     <div class="img-wrap__degenerate">
       <div class="img-container">
         <div class="img-frame__degenerate">
-<img src="{{model.exposeUrl}}" class="img__degenerate">
+          <div class="loading"><img src="https://66.media.tumblr.com/bce24214af0c8d9458bda42d6175d8a6/tumblr_o96pt8aKNN1qzn6p7o1_r1_400.gif" alt=""></div>
+          <img src="{{model.exposeUrl}}" class="img__degenerate">
           {{!-- {{lazy-image url=model.exposeUrl class="img__degenerate" errorText='Something went wrong.'}} --}}
         </div>
       </div>
     </div>
-    <div class="user__degenerate">
-      {{log model}}
+    {{!-- {{/if}} --}}
+        <div class="user__degenerate">
+
       <p>Submitted by: {{ model.user.username }}</p>
     </div>
+
   </div>
 </div>
+
 
 {{outlet}}

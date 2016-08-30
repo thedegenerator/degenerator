@@ -72,3 +72,15 @@
   background: #000;
 
 }
+@keyframes blink {
+  from{color:white;}
+  to{color:black;}
+}
+.loading{
+  font-size: 10rem;
+  position: absolute;
+  z-index: -1;
+  top:70%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
