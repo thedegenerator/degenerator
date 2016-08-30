@@ -64,7 +64,11 @@ function drawScene() {
     // ctx.save();
 
     var img = new Image();
+    var loading = new Image();
+
     img.src = "../images/default.png";
+
+
     ctx.globalCompositeOperation = "xor";
         ctx.translate(0, 0);
     ctx.drawImage(img,translateX,translateY);

@@ -4,6 +4,14 @@ import config from 'degenerator-ui/config/environment';
 export default Ember.Controller.extend({
   filesystem: Ember.inject.service(),
   session: Ember.inject.service(),
+  filterTypes: [
+    'blur',
+    'emboss',
+    'cycle',
+    'implode',
+    'sharpen',
+    'dither',
+  ],
 
   init() {
     this._super(...arguments);
@@ -18,6 +26,13 @@ export default Ember.Controller.extend({
     },
     uploadImg(formValues){
       const token = this.get('session.session.content.authenticated.access_token');
+      formValues.filters = this.filterTypes.reduce((appliedFilters, filterType) => {
+        if (formValues[filterType]) {
+          return [...appliedFilters, filterType];
+        }
+
+        return appliedFilters;
+      }, []);
 
       if (!this.uploadFile) {
         return alert('Yo! Upload a file!');
