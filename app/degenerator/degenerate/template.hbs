@@ -7,14 +7,14 @@
         {{/link-to}}
 
         <p class="title__degenerate">{{ model.title }}</p>
-        <p class="views__degenerate">753 views</p>
+        <p class="views__degenerate">{{model.hits}} views</p>
       </div>
     </div>
     <div class="img-wrap__degenerate">
       <div class="img-container">
         <div class="img-frame__degenerate">
-
-          <img class="img__degenerate" src="http://localhost:3333/image/{{model.id}}-expose.{{model.extension}}" alt="">
+<img src="{{model.exposeUrl}}" class="img__degenerate">
+          {{!-- {{lazy-image url=model.exposeUrl class="img__degenerate" errorText='Something went wrong.'}} --}}
         </div>
       </div>
     </div>
