@@ -17,6 +17,7 @@ tick();
 
 var translateX;
 var translateY;
+var rotate = 0.001;
 var translate0 = 0;
 
 
@@ -35,6 +36,14 @@ function renderToCache(renderFunction) {
   return buffer;
 }
 
+// const hotSpot = document.querySelector('#hotSpot');
+// const hotSpot2 = document.querySelector('#hotSpot2');
+// hotSpot.addEventListener('mouseenter', function(){
+//   rotate = .1;
+// });
+// hotSpot2.addEventListener('mouseenter', function(){
+//   rotate = .001;
+// });
 
 document.addEventListener('mousemove', function(ev) {
 
@@ -50,7 +59,7 @@ function drawScene() {
 
     ctx.globalCompositeOperation = "difference";
     ctx.translate(centerX, centerY);
-    ctx.rotate(0.001);
+    ctx.rotate(rotate);
     ctx.translate(-centerX, -centerY);
     ctx.translate(translate0, -translate0);
     ctx.scale(1.0001, .999);

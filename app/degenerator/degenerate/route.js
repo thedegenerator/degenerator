@@ -13,7 +13,7 @@ export default Ember.Route.extend({
       return this.transitionTo('degenerator.index');
     }
 
-    model.incrementProperty('hits');
-    model.save();
+    // model.incrementProperty('hits');
+    // model.save();
   },
 });
