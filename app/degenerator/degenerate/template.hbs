@@ -5,8 +5,10 @@
         {{#link-to "degenerator.main" class="back__degenerate" }}
           go back
         {{/link-to}}
-
+      <div class="empty-div">
         <p class="title__degenerate title__degenerate--{{model.viewColor}}">{{ model.title }}</p>
+        <p class="submitted-user">Submitted by: {{ model.user.username }}</p>
+      </div>
         <p class="views__degenerate">views {{ model.hits }}</p>
       </div>
     </div>
@@ -17,20 +19,24 @@
     <div class="img-wrap__degenerate">
       <div class="img-container">
         <div class="img-frame__degenerate">
-          <div class="loading"><img src="https://66.media.tumblr.com/bce24214af0c8d9458bda42d6175d8a6/tumblr_o96pt8aKNN1qzn6p7o1_r1_400.gif" alt=""></div>
-          <img src="{{model.exposeUrl}}" class="img__degenerate">
-          {{!-- {{lazy-image url=model.exposeUrl class="img__degenerate" errorText='Something went wrong.'}} --}}
+          <div class="loading">
+            {{scramble-letters words="the [de]generator is degenerating..." tagName="h1" class="loadingMessage"}}
+
+            {{!-- <img src="https://66.media.tumblr.com/bce24214af0c8d9458bda42d6175d8a6/tumblr_o96pt8aKNN1qzn6p7o1_r1_400.gif" alt=""> --}}
+          </div>
+          <img src="{{model.exposeUrl}}" class="img__degenerate" data-lf="user-image:{{model.id}}">
+
+          {{#lazy-image url=model.exposeUrl class="img__degenerate" errorText='Something went wrong.'}}
+            <img src="http://localhost:3333/image/{{model.id}}.{{model.extension}}" class="img__degenerate" data-lf="user-image:{{model.id}}">
+          {{/lazy-image}}
         </div>
       </div>
     </div>
     {{!-- {{/if}} --}}
-        <div class="user__degenerate">
 
-      <p>Submitted by: {{ model.user.username }}</p>
-    </div>
 
   </div>
 </div>
 
 
-{{outlet}}
+{{liquid-outlet}}

@@ -12,9 +12,6 @@
   }
 }
 
-.img-frame {
-  width: 100%;
-}
 .post-card {
   background: white;
   margin-top: 1rem;
@@ -65,12 +62,12 @@
 }
 
 .img-frame {
-  border: black 0.3rem solid;
+  /*border: black 0.3rem solid;*/
   width: 100%;
 
-
-  &__frame {
+  &__img {
     text-align: center;
+    display: block;
   }
 }
 
