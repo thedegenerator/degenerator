@@ -109,7 +109,7 @@
   }
 
 .loading{
-  animation: matrix 20s;
+  animation: matrix 20s infinite;
   padding: .5rem 1rem;
   font-size: 1rem;
   position: absolute;

@@ -8,6 +8,7 @@ export default Ember.Component.extend({
       container: this.element,
       usage: "shuffle",
       alphabet: "Morgan Jeff",
+      paused: 3,
     });
 
     x.animate();
