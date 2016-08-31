@@ -68,3 +68,14 @@ body {
     color: #f00;
   }
 }
+@media only screen and (max-width: 600px)  {
+  header__index {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 3rem;
+    background: #000;
+    margin: auto;
+  }
+}

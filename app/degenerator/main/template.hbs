@@ -9,9 +9,7 @@
         <h2 class="post-card__title--{{upload.viewColor}}">{{upload.title}}</h2>
         <div class="black-wrapper">
         <div class="degeneration-type">
-          <p class="degeneration-type__item">{{formValues[filterTypes]}}</p>
-          {{!-- <p class="degeneration-type__item">Emboss</p>
-          <p class="degeneration-type__item">Sharpen</p> --}}
+          <p class="degeneration-type__item">{{upload.filters}}</p>
         </div>
         <div class="view-counts">
           <p class="views-left">{{upload.hits}} / {{upload.threshold}}</p>
