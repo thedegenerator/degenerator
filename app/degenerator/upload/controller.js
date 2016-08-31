@@ -40,7 +40,6 @@ export default Ember.Controller.extend({
         if (formValues[filterType]) {
           return [...appliedFilters, filterType];
         }
-
         return appliedFilters;
       }, []);
 

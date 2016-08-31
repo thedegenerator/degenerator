@@ -1,8 +1,17 @@
 @keyframes disappear {
-from {color: white;}
-to {color: black;}
-from {color: black;}
-to {color: white;}
+      0% { color: red; }
+      5% { color: black; }
+      10% { color: red; }
+      15% { color: black; }
+      20% { color: red; }
+      25% { color: black; }
+      30% { color: red; }
+      35% { color: black; }
+      40% { color: red; }
+      45% { color: black; }
+      50% { color: red; }
+      75% { color: black; }
+      100% { color: red; }
 }
 
 
@@ -10,14 +19,14 @@ to {color: white;}
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  color: white;
+  color: black;
   margin: auto;
 }
 .home-title{
-  animation: disappear 15s;
-  z-index: -101;
+  animation: disappear 1s;
+  z-index: -4;
   width: calc(100%/4);
-  color: #fff;
+  color: #000;
 }
 
 body {
@@ -66,5 +75,16 @@ body {
   margin-right: 1rem;
   &:hover {
     color: #f00;
+  }
+}
+@media only screen and (max-width: 600px)  {
+  header__index {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 3rem;
+    background: #000;
+    margin: auto;
   }
 }

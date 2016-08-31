@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     return this.store.findRecord('upload', id);
   },
   afterModel(model){
-    if (model.get('hits') > model.get('threshold')) {
+    if (model.get('hits') >= model.get('threshold')) {
       model.destroyRecord();
 
       // Alert that the image is GONE
