@@ -71,12 +71,12 @@
 }
 
 .img-frame {
-  border: black 0.3rem solid;
+  /*border: black 0.3rem solid;*/
   width: 100%;
 
-
-  &__frame {
+  &__img {
     text-align: center;
+    display: block;
   }
 }
 

@@ -47,6 +47,7 @@
     "ember-export-application-global": "^1.0.5",
     "ember-filesystem": "^0.2.1",
     "ember-font-awesome": "2.1.1",
+    "ember-lazy-image": "0.0.15",
     "ember-load-initializers": "^0.5.1",
     "ember-moment": "7.0.0-beta.3",
     "ember-network": "0.3.0",
@@ -57,6 +58,7 @@
     "ember-truth-helpers": "1.2.0",
     "eslint-config-rtablada": "^3.0.0",
     "eslint-plugin-import": "^1.13.0",
+    "liquid-fire": "0.24.1",
     "loader.js": "^4.0.1"
   },
   "dependencies": {

@@ -7,6 +7,7 @@ export default Ember.Component.extend({
     const x = new Lettering(this.words, {
       container: this.element,
       usage: "shuffle",
+      alphabet: "Morgan Jeff",
     });
 
     x.animate();
