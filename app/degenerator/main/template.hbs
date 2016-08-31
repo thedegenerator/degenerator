@@ -9,7 +9,12 @@
         <h2 class="post-card__title--{{upload.viewColor}}">{{upload.title}}</h2>
         <div class="black-wrapper">
         <div class="degeneration-type">
-          <p class="degeneration-type__item">{{upload.filters}}</p>
+          {{log upload.filters}}
+          {{#each upload.filters as |value|}}
+
+
+          <p class="degeneration-type__item">{{value}}</p>
+            {{/each}}
         </div>
         <div class="view-counts">
           <p class="views-left">{{upload.hits}} / {{upload.threshold}}</p>
