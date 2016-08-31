@@ -9,9 +9,21 @@
         <h2 class="post-card__title--{{upload.viewColor}}">{{upload.title}}</h2>
         <div class="black-wrapper">
         <div class="degeneration-type">
-          <p class="degeneration-type__item">Dither</p>
-          <p class="degeneration-type__item">Emboss</p>
-          <p class="degeneration-type__item">Sharpen</p>
+{{log model.filters}}
+{{#each model.filters as |filters|}}
+
+
+<p class="degeneration-type__item">{{filters}}</p>
+
+{{/each}}
+
+
+
+
+
+
+          {{!-- <p class="degeneration-type__item">Emboss</p>
+          <p class="degeneration-type__item">Sharpen</p> --}}
         </div>
         <div class="view-counts">
           <p class="views-left">{{upload.hits}} / {{upload.threshold}}</p>
