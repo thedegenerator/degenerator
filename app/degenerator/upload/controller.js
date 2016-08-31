@@ -9,8 +9,18 @@ export default Ember.Controller.extend({
     'emboss',
     'cycle',
     'implode',
-    'sharpen',
-    'dither',
+    'charcoal',
+    'edge',
+    'median',
+    'paint',
+    'solarize',
+    'spread',
+    'swirl',
+    'unsharp',
+
+
+
+
   ],
 
   init() {
