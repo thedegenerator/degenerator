@@ -14,6 +14,9 @@
 
 .img-frame {
   width: 100%;
+  img{
+    display: block;
+  }
 }
 .post-card {
   background: white;
@@ -48,6 +51,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  width:13rem;
   padding: 0.5rem;
   background: black;
   color: white;
@@ -55,7 +59,9 @@
 
   &__item {
     min-width: 2rem;
+    width:2.5rem;
     text-align: center;
+
 
     &::before {
       content: "√";
