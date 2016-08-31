@@ -6,17 +6,17 @@ export default Ember.Controller.extend({
   session: Ember.inject.service(),
   filterTypes: [
     'blur',
-    'emboss',
     'cycle',
     'implode',
-    'charcoal',
     'edge',
     'median',
     'paint',
-    'solarize',
+    'emboss',
     'spread',
     'swirl',
     'unsharp',
+    'charcoal',
+    'solarize',
 
 
 
