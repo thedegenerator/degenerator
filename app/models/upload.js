@@ -6,6 +6,7 @@ export default DS.Model.extend({
   threshold: DS.attr('number'),
   hits: DS.attr('number'),
   user: DS.belongsTo('user'),
+  comments: DS.hasMany('comment'),
   filters: DS.attr(),
 
   exposeUrl: Ember.computed('extension', function() {

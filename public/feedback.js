@@ -36,11 +36,13 @@ function renderToCache(renderFunction) {
   return buffer;
 }
 
-// const hotSpot = document.querySelector('#hotSpot');
-// const hotSpot2 = document.querySelector('#hotSpot2');
+// const hotSpot = document.querySelector('#hotspot');
+// const hotSpot2 = document.querySelector('#hotspot2');
+//
 // hotSpot.addEventListener('mouseenter', function(){
 //   rotate = .1;
 // });
+//
 // hotSpot2.addEventListener('mouseenter', function(){
 //   rotate = .001;
 // });
