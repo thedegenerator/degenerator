@@ -6,6 +6,7 @@ export default DS.Model.extend({
   threshold: DS.attr('number'),
   hits: DS.attr('number'),
   user: DS.belongsTo('user'),
+  filters:DS.attr('string'),
 
   exposeUrl: Ember.computed('extension', function() {
     return `http://localhost:3333/image/${this.get('id')}-expose.${this.get('extension')}`
