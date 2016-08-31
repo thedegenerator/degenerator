@@ -23,7 +23,7 @@
   margin: auto;
 }
 .home-title{
-  animation: disappear 1s;
+  animation: disappear 2s;
   z-index: -4;
   width: calc(100%/4);
   color: #000;
