@@ -11,13 +11,13 @@ var raf = window.requestAnimationFrame ||
 var theta = 0;
 var direction = 0;
 var time = performance.now();
-// console.log(time);
 resize();
 tick();
 
+
 var translateX;
 var translateY;
-var rotate = 0.001;
+var rotate = 1;
 var translate0 = 0;
 
 
@@ -97,15 +97,14 @@ function drawScene() {
 
 
 
+
 function tick() {
-  // var now = performance.now() * 100;
-  // if (animating) {
+
+setTimeout(function(){
     raf(tick);
-    // theta = (now / time) / direction;
-    // time = now;
     drawScene();
-  // }
-  // else raf(tick);
+ }, 400);
+
 }
 
 function resize(e) {
