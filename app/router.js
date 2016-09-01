@@ -12,6 +12,7 @@ Router.map(function() {
     this.route('register');
     this.route('upload');
     this.route('main');
+    this.route('destroyed', {path: '/:id/destroyed'});
     this.route('degenerate',{path: '/:id/degenerate'});
   });
 

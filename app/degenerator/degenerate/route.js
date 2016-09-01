@@ -10,7 +10,7 @@ export default Ember.Route.extend({
 
       // Alert that the image is GONE
 
-      return this.transitionTo('degenerator.index');
+      return this.transitionTo('degenerator.destroyed', id);
     }
 
     // model.incrementProperty('hits');

@@ -72,6 +72,12 @@
     &:nth-child(4) {
       border-left: 0.1rem black solid;
     }
+    &:nth-child(7) {
+      border-left: 0.1rem black solid;
+    }
+    &:nth-child(10) {
+      border-left: 0.1rem black solid;
+    }
   }
 }
 

@@ -1,0 +1,21 @@
+<div class="app__destroyed">
+  <div class="loading-destroyed">
+    {{scramble-letters words="the [de]generator degenerated your image" tagName="h1" class="loadingMessage"}}
+  </div>
+
+  <div class="hero__destroyed">
+    <div class="img-wrap__destroyed">
+      <div class="img-container__destroyed">
+        <div class="img-frame__destroyed">
+          <img src="http://localhost:3333/image/{{model.id}}.{{model.extension}}" class="img__destroyed-destroyed" data-lf="user-image:{{model.id}}">
+
+          {{!-- {{#lazy-image url=model.exposeUrl class="img__destroyed" errorText='Something went wrong.' }}
+          {{/lazy-image}} --}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{{outlet}}
