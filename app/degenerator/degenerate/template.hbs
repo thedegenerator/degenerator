@@ -24,20 +24,36 @@
           </div>
           <img src="{{model.exposeUrl}}" class="img__degenerate" data-lf="user-image:{{model.id}}">
 
-          {{#lazy-image url=model.exposeUrl class="img__degenerate" errorText='Something went wrong.'}}
+          {{#lazy-image url=model.exposeUrl class="img__degenerate img__degenerate-lazy" errorText='Something went wrong.'}}
             <img src="http://localhost:3333/image/{{model.id}}.{{model.extension}}" class="img__degenerate" data-lf="user-image:{{model.id}}">
           {{/lazy-image}}
         </div>
       </div>
     </div>
 
+<section class="comments">
+  {{!-- <h2 class="comments-title"> Comments:</h2> --}}
+  <div class="comments__comment-container">
 {{#each model.comments as |comment|}}
-  <p>{{model.username}}{{comment.text}}</p>
+{{#if comment.text}}
+  <p class="comments__comment"><span>{{comment.text}}</span></p>
+  {{/if}}
 {{/each}}
-{{#simple-form onsubmit=(action "postComment" model) as |formValues|}}
-{{input value=formValues.text}}
-<button>Submit</button>
+</div>
+  {{#if session.isAuthenticated}}
 
+{{#simple-form onsubmit=(action "postComment" model) as |formValues|}}
+<div class="comments-input__container">
+<button class="comments-submit">Submit</button>
+{{input class= "comments-input" value=formValues.text placeholder="write comment here"}}
+</div>
 {{/simple-form}}
+
+{{else}}
+
+<h3 class='comments__ifnotlogged'>only registerd users can comment</h3>
+{{/if}}
+
+</section>
   </div>
 </div>
