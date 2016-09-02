@@ -3,7 +3,7 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   title:DS.attr('string'),
   extension: DS.attr('string'),
-  threshold: DS.attr('number'),
+  threshold: DS.attr('number', { defaultValue: 20 }),
   hits: DS.attr('number'),
   user: DS.belongsTo('user'),
   filters:DS.attr('string'),

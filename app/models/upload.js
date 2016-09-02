@@ -5,7 +5,7 @@ import config from 'degenerator-ui/config/environment';
 export default DS.Model.extend({
   title: DS.attr('string'),
   extension: DS.attr('string'),
-  threshold: DS.attr('number'),
+  threshold: DS.attr('number', { defaultValue: 20 }),
   hits: DS.attr('number'),
   user: DS.belongsTo('user'),
   comments: DS.hasMany('comment'),
