@@ -119,6 +119,8 @@ max-width: 66rem;
 width: 100%;
 margin: auto;
 margin-bottom: 1rem;
+padding-top:1rem;
+
 
 &-title{
 
@@ -131,13 +133,14 @@ margin-bottom: 1rem;
 &-submit{
   font-size: 1rem;
   width:25%;
-  background:black;
-  color:white;
-  border-color: red;
+  background: white;
+   color: black;
+
+  border-color: black;
   border-width: .1rem;
   &:active{
-    background: white;
-    color:black;
+    background: black;
+    color:white;
   }
 }
 &-input{
@@ -145,10 +148,10 @@ margin-bottom: 1rem;
   font-size: 1rem;
     width:75%;
     height: 100%;
-    background: black;
-    color:red;
+    background: white;
+     color: black;
+     border: .1rem black solid;
     outline:none;
-    border: red .1rem solid;
     padding:.5rem;
 
 
@@ -158,12 +161,14 @@ margin-bottom: 1rem;
   display: flex;
 }
 &__comment{
-background: black;
-color:black;
+  background: white;
+   color: black;
+   border: .1rem black solid;
 padding-left: .5rem;
   span{
-    color:red;
-    background: black;
+    background: white;
+     color: black;
+
   }
 
 

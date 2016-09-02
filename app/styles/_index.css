@@ -88,4 +88,9 @@ body {
     background: #000;
     margin: auto;
   }
+  .header__right {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+  }
 }
