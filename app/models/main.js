@@ -9,7 +9,7 @@ export default DS.Model.extend({
   filters:DS.attr('string'),
 
   exposeUrl: Ember.computed('extension', function() {
-    return `http://localhost:3333/app/${this.get('id')}-expose.${this.get('extension')}`
+    return `http://localhost:3333/image/${this.get('id')}-expose.${this.get('extension')}`
   }),
 
   viewColor: Ember.computed('hits', 'threshold', function() {
