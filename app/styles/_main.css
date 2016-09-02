@@ -111,12 +111,15 @@
 }
 
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 700px)  {
 
 .post-card {
   width: 100%;
 }
 .degeneration-type {
   width:100%;
+}
+.view-btn{
+  text-align: center;
 }
 }

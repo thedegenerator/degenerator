@@ -78,7 +78,7 @@ body {
     color: #f00;
   }
 }
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 700px)  {
   .header__index {
     display: flex;
     align-items: center;
@@ -87,7 +87,7 @@ body {
     background: #000;
     margin: auto;
     font-size: .75rem;
-    padding-top: -.5rem;
+    padding: .5rem 3rem;
   }
   .header__right {
     display: flex;
