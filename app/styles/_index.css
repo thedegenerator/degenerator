@@ -78,19 +78,25 @@ body {
     color: #f00;
   }
 }
-@media only screen and (max-width: 600px)  {
-  header__index {
+@media only screen and (max-width: 700px)  {
+  .header__index {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    padding: 0 3rem;
     background: #000;
     margin: auto;
+    font-size: .75rem;
+    padding: .5rem 3rem;
   }
   .header__right {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 2rem;
+
+  }
+  .home-title{
+
+font-size: .75rem;
+
   }
 }
