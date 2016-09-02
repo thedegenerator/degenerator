@@ -79,18 +79,24 @@ body {
   }
 }
 @media only screen and (max-width: 600px)  {
-  header__index {
+  .header__index {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    padding: 0 3rem;
     background: #000;
     margin: auto;
+    font-size: .75rem;
+    padding-top: -.5rem;
   }
   .header__right {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 2rem;
+
+  }
+  .home-title{
+
+font-size: .75rem;
+
   }
 }
