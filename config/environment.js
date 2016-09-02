@@ -36,15 +36,6 @@ module.exports = function(environment) {
     }
   };
 
-  ENV['ember-simple-auth-token'] = {
-    serverTokenEndpoint: `${ENV.DS.host}/token`,
-    tokenPropertyName: 'access_token',
-  };
-  ENV['ember-simple-auth'] = {
-    baseURL: '/',
-    routeAfterAuthentication: 'degenerator.upload'
-  };
-
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
@@ -65,8 +56,18 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-ENV.DS.host = "https://degenerator.heroku.com/";
+    ENV.DS.host = "https://degenerator.herokuapp.com";
   }
+
+  ENV['ember-simple-auth'] = {
+    baseURL: '/',
+    routeAfterAuthentication: 'degenerator.upload'
+  };
+
+  ENV['ember-simple-auth-token'] = {
+    serverTokenEndpoint: `${ENV.DS.host}/token`,
+    tokenPropertyName: 'access_token',
+  };
 
   return ENV;
 

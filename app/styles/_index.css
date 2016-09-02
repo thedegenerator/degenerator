@@ -49,6 +49,7 @@ body {
   min-width: 15rem;
 }
 .title__index {
+
   margin: 0 1rem 0 0;
   color: #fff;
 
@@ -67,7 +68,7 @@ body {
 .header__right {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 1rem;
+  margin-right: -1rem;
 }
 
 .post, .login-link, .register-link {
@@ -86,5 +87,10 @@ body {
     padding: 0 3rem;
     background: #000;
     margin: auto;
+  }
+  .header__right {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 2rem;
   }
 }

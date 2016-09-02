@@ -15,6 +15,7 @@
 .img-frame {
   width: 100%;
   img{
+    width: 100%;
     display: block;
   }
 }
@@ -56,6 +57,7 @@
   background: black;
   color: white;
   font-size: 0.5rem;
+
 
   &__item {
     min-width: 2rem;

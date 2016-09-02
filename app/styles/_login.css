@@ -38,7 +38,7 @@ to { top:25%;}
   transform: translate(-50%, -50%);
   background: white;
   opacity: 1;
-  z-index: -1;
+  z-index: -10;
 }
 .alert-message {
   font-size: 2rem;
