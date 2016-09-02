@@ -77,7 +77,7 @@ function drawScene() {
     var img = new Image();
     var loading = new Image();
 
-    img.src = "../app/default.png";
+    img.src = "../images/default.png";
 
 
     ctx.globalCompositeOperation = "xor";
