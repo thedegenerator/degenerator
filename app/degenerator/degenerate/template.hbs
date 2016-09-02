@@ -2,16 +2,16 @@
   <div class="hero__degenerate">
     <div class="nav__degenerate">
       <div class="container__degenerate">
-        {{#link-to "degenerator.main" class="back__degenerate" }}
+        {{#link-to "degenerator.main" class="back__degenerate nav__degenerate-item" }}
           go back
         {{/link-to}}
         <div class="empty-div">
           {{#if model.title}}
-          <p class="title__degenerate title__degenerate--{{model.viewColor}}">{{ model.title }}</p>
+          <p class="title__degenerate title__degenerate--{{model.viewColor}} nav__degenerate-item">{{ model.title }}</p>
       {{/if}}
-          <p class="submitted-user">Submitted by: {{ model.user.username }}</p>
+          <p class="submitted-user nav__degenerate-item">Submitted by: {{ model.user.username }}</p>
         </div>
-        <p class="views__degenerate">views {{ model.hits }}/{{model.threshold}}</p>
+        <p class="views__degenerate nav__degenerate-item">views {{ model.hits }}/{{model.threshold}}</p>
       </div>
     </div>
 
