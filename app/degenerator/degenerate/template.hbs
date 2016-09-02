@@ -5,11 +5,13 @@
         {{#link-to "degenerator.main" class="back__degenerate" }}
           go back
         {{/link-to}}
-      <div class="empty-div">
-        <p class="title__degenerate title__degenerate--{{model.viewColor}}">{{ model.title }}</p>
-        <p class="submitted-user">Submitted by: {{ model.user.username }}</p>
-      </div>
-        <p class="views__degenerate">views {{ model.hits }}</p>
+        <div class="empty-div">
+          {{#if model.title}}
+          <p class="title__degenerate title__degenerate--{{model.viewColor}}">{{ model.title }}</p>
+      {{/if}}
+          <p class="submitted-user">Submitted by: {{ model.user.username }}</p>
+        </div>
+        <p class="views__degenerate">views {{ model.hits }}/{{model.threshold}}</p>
       </div>
     </div>
 
@@ -19,41 +21,39 @@
         <div class="img-frame__degenerate">
           <div class="loading">
             {{scramble-letters words="the [de]generator is degenerating..." tagName="h1" class="loadingMessage"}}
-
-
           </div>
           <img src="{{model.exposeUrl}}" class="img__degenerate" data-lf="user-image:{{model.id}}">
-
-          {{#lazy-image url=model.exposeUrl class="img__degenerate img__degenerate-lazy" errorText='Something went wrong.'}}
-            <img src="http://localhost:3333/image/{{model.id}}.{{model.extension}}" class="img__degenerate" data-lf="user-image:{{model.id}}">
+          {{#lazy-image url=model.exposeUrl class="img__degenerate img__degenerate-lazy" errorText='Something went wrong.' }}
+            <img src="{{model.galleryUrl}}" class="img__degenerate" data-lf="user-image:{{model.id}}">
           {{/lazy-image}}
+          <section class="comments">
+            {{!-- <h2 class="comments-title"> Comments:</h2> --}}
+            <div class="comments__comment-container">
+              {{#each model.comments as |comment|}}
+                {{#if comment.text}}
+                  <p class="comments__comment"><span>{{comment.text}}</span></p>
+                {{/if}}
+              {{/each}}
+            </div>
+            {{#if session.isAuthenticated}}
+
+              {{#simple-form onsubmit=(action "postComment" model) as |formValues|}}
+                <div class="comments-input__container">
+                  <button class="comments-submit">Submit</button>
+                  {{input class= "comments-input" value=formValues.text placeholder="write comment here"}}
+                </div>
+              {{/simple-form}}
+
+            {{else}}
+
+              <h3 class='comments__ifnotlogged'>only registerd users can comment</h3>
+            {{/if}}
+
+          </section>
         </div>
       </div>
     </div>
 
-<section class="comments">
-  {{!-- <h2 class="comments-title"> Comments:</h2> --}}
-  <div class="comments__comment-container">
-{{#each model.comments as |comment|}}
-{{#if comment.text}}
-  <p class="comments__comment"><span>{{comment.text}}</span></p>
-  {{/if}}
-{{/each}}
-</div>
-  {{#if session.isAuthenticated}}
 
-{{#simple-form onsubmit=(action "postComment" model) as |formValues|}}
-<div class="comments-input__container">
-<button class="comments-submit">Submit</button>
-{{input class= "comments-input" value=formValues.text placeholder="write comment here"}}
-</div>
-{{/simple-form}}
-
-{{else}}
-
-<h3 class='comments__ifnotlogged'>only registerd users can comment</h3>
-{{/if}}
-
-</section>
   </div>
 </div>

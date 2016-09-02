@@ -80,10 +80,9 @@ function drawScene() {
     img.src = "../images/default.png";
 
 
-    ctx.globalCompositeOperation = "xor";
-        ctx.translate(0, 0);
+    ctx.globalCompositeOperation = "difference";
+    ctx.translate(0, 0);
     ctx.drawImage(img,translateX,translateY);
-
     ctx.restore();
   });
 
@@ -103,7 +102,7 @@ function tick() {
 setTimeout(function(){
     raf(tick);
     drawScene();
- }, 400);
+ }, 40);
 
 }
 

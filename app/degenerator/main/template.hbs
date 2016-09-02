@@ -1,10 +1,11 @@
 <div class="main-container">
   <div class="main-container__inner">
     {{#each model as |upload|}}
+{{#if (gt upload.threshold upload.hits) }}
       <div class="post-card">
         {{#link-to 'degenerator.degenerate' upload.id}}
         <div class="img-frame">
-          <img class="img-frame__img" data-lf="user-image:{{upload.id}}" src="http://localhost:3333/image/{{upload.id}}.{{upload.extension}}" alt="">
+          <img class="img-frame__img" data-lf="user-image:{{upload.id}}" src="{{upload.galleryUrl}}" alt="">
         </div>
         {{/link-to}}
 
@@ -28,6 +29,7 @@
         <div class="view-btn">click to view</div>
         {{/link-to}}
       </div>
+      {{/if}}
     {{/each}}
   </div>
 </div>
