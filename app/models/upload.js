@@ -3,14 +3,14 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   title:DS.attr('string'),
   extension: DS.attr('string'),
-  threshold: DS.attr('number'),
+  threshold: DS.attr('number', { defaultValue: 20 }),
   hits: DS.attr('number'),
   user: DS.belongsTo('user'),
   comments: DS.hasMany('comment'),
   filters: DS.attr(),
 
   exposeUrl: Ember.computed('extension', function() {
-    return `http://localhost:3333/image/${this.get('id')}-expose.${this.get('extension')}`
+    return `http://localhost:3333/app/${this.get('id')}-expose.${this.get('extension')}`
   }),
 
   viewColor: Ember.computed('hits', 'threshold', function() {

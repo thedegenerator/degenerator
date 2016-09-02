@@ -4,7 +4,7 @@ export default Ember.Route.extend({
   model({ id }) {
     return this.store.findRecord('upload', id);
   },
-  afterModel(model){
+  afterModel(model, {id}){
     if (model.get('hits') >= model.get('threshold')) {
       model.destroyRecord();
 

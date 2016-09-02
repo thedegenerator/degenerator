@@ -25,7 +25,7 @@
           <img src="{{model.exposeUrl}}" class="img__degenerate" data-lf="user-image:{{model.id}}">
 
           {{#lazy-image url=model.exposeUrl class="img__degenerate img__degenerate-lazy" errorText='Something went wrong.'}}
-            <img src="http://localhost:3333/image/{{model.id}}.{{model.extension}}" class="img__degenerate" data-lf="user-image:{{model.id}}">
+            <img src="http://localhost:3333/app/{{model.id}}.{{model.extension}}" class="img__degenerate" data-lf="user-image:{{model.id}}">
           {{/lazy-image}}
         </div>
       </div>
