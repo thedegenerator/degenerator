@@ -109,3 +109,14 @@
     color: white;
   }
 }
+
+
+@media only screen and (max-width: 600px)  {
+
+.post-card {
+  width: 100%;
+}
+.degeneration-type {
+  width:100%;
+}
+}
