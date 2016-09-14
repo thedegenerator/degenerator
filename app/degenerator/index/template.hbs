@@ -1,0 +1,11 @@
+{{liquid-outlet}}
+<style>
+
+</style>
+{{#link-to 'degenerator.main'}}
+<div class="title-group">
+  {{#each (range 0 72) as |value|}}
+      {{scramble-letters words="the degenerator" tagName="h1" class="home-title"}}
+  {{/each}}
+</div>
+{{/link-to}}

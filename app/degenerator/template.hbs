@@ -1,0 +1,41 @@
+<div class="header__index">
+  <div class="header__left">
+    {{#link-to 'degenerator.main'}}
+      <h2 class="title__index">the [<span class="de">de</span>]generator</h2>
+    {{/link-to}}
+    {{#if session.isAuthenticated}}
+    <div class="username-display">
+      <h2>Hello,  {{ session.currentUser.username }}!</h2>
+    </div>
+    {{/if}}
+  </div>
+
+
+  <div class="header__right">
+    {{#link-to 'degenerator.upload'}}
+      <h2 class="post">upload</h2>
+    {{/link-to}}
+
+{{#if session.isAuthenticated}}
+  {{#link-to 'degenerator.login'}}
+<h2 class="login-link"{{action 'invalidateSession'}}>Logout</h2>
+  {{/link-to}}
+{{else}}
+    {{#link-to 'degenerator.login'}}
+      <h2 class="login-link">login</h2>
+    {{/link-to}}
+ {{/if}}
+
+ {{#if session.isAuthenticated}}
+
+{{else}}
+    {{#link-to 'degenerator.register'}}
+      <h2 class="register-link">register</h2>
+    {{/link-to}}
+    {{/if}}
+  </div>
+</div>
+
+
+
+{{liquid-outlet}}

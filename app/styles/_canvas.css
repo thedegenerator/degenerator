@@ -1,0 +1,33 @@
+
+
+canvas{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height: 100vh;
+  z-index: -5;
+
+
+
+}
+
+#hotspot{
+  width: 100px;
+  height:100px;
+  border: 1px black solid;
+  position: fixed;
+  right: 0;
+  top: 50%;
+
+}
+
+#hotspot2{
+  width: 100px;
+  height:100px;
+  border: 1px black solid;
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+}

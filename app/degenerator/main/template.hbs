@@ -1,0 +1,36 @@
+<div class="main-container">
+  <div class="main-container__inner">
+    {{#each model as |upload|}}
+{{#if (gt upload.threshold upload.hits) }}
+      <div class="post-card">
+        {{#link-to 'degenerator.degenerate' upload.id}}
+        <div class="img-frame">
+          <img class="img-frame__img" data-lf="user-image:{{upload.id}}" src="{{upload.galleryUrl}}" alt="">
+        </div>
+        {{/link-to}}
+
+        <h2 class="post-card__title--{{upload.viewColor}}">{{upload.title}}</h2>
+        <div class="black-wrapper">
+        <div class="degeneration-type">
+
+          {{#each upload.filters as |value|}}
+
+
+          <p class="degeneration-type__item">{{value}}</p>
+            {{/each}}
+        </div>
+        <div class="view-counts">
+          <p class="views-left">{{upload.hits}} / {{upload.threshold}}</p>
+        </div>
+        <p>uploaded by:{{upload.user.username}}</p>
+        </div>
+        {{log upload.id}}
+        {{#link-to 'degenerator.degenerate' upload.id}}
+        <div class="view-btn">click to view</div>
+        {{/link-to}}
+      </div>
+      {{/if}}
+    {{/each}}
+  </div>
+</div>
+{{liquid-outlet}}

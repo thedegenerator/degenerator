@@ -1,0 +1,72 @@
+@import "login";
+@import "main";
+@import "register";
+@import "upload";
+@import "index";
+@import "degenerate";
+@import "canvas";
+@import "destroyed";
+
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+  text-transform: lowercase;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.text-input {
+  font-size: 2rem;
+  width: 100%;
+  outline: red;
+  background: black;
+  color: red;
+  border: 0.2rem solid transparent;
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+  text-transform: none;
+
+  &:active {
+    background: red;
+  }
+
+  &:focus {
+    border-color: red;
+  }
+  &::selection{
+    background: white;
+  }
+}
+
+.btn-click:active {
+  background: black;
+  color: white;
+}
+
+*:focus,
+input:focus {
+  outline-color: red;
+}
+
+button {
+  background: none;
+  width: 100%;
+  border: .2rem solid #000;
+}
+.username-display {
+  color: #fff;
+
+}

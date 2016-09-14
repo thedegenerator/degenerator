@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>StarterProject</title>
+    <title>the [de]generator</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{content-for "head"}}
 
     <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link rel="stylesheet" href="{{rootURL}}assets/starter-project.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/degenerator-ui.css">
 
     {{content-for "head-footer"}}
   </head>
@@ -18,8 +19,14 @@
     {{content-for "body"}}
 
     <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/starter-project.js"></script>
+    <script src="{{rootURL}}assets/degenerator-ui.js"></script>
 
     {{content-for "body-footer"}}
+
+
+<canvas></canvas>
+
   </body>
+    <script type="text/javascript" src="../feedback.js">
+    </script>
 </html>

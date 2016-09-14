@@ -7,6 +7,15 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('degenerator',{path: '/'}, function(){
+    this.route('login');
+    this.route('register');
+    this.route('upload');
+    this.route('main');
+    this.route('destroyed', {path: '/:id/destroyed'});
+    this.route('degenerate',{path: '/:id/degenerate'});
+  });
+
 });
 
 export default Router;

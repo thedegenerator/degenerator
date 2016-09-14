@@ -1,0 +1,217 @@
+.upload-container {
+  &__inner {
+    max-width: 60rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+  }
+}
+
+.upload-card {
+  background: white;
+  border: 0.2rem black solid;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+
+  width: 20rem;
+
+  &__item {
+    margin-top: 1rem;
+  }
+}
+
+.image-title-input {
+  font-size: 2rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: black;
+  color: red;
+  border: 0.2rem white solid;
+  border: 0.2rem solid transparent; // &::-webkit-input-placeholder{
+  //   color:#5e5e5e;
+  //   background: white;
+  //   font-size: 2.01rem;
+  //   text-align: center;
+  //   border: none;
+  // }
+  &:active {
+    background: red;
+  }
+
+  &:focus {
+    border: red 0.2rem solid;
+  }
+}
+
+.checkbox-group {
+  display: flex;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+  // padding: 0.5rem;
+  justify-content: space-between;
+
+  &__item {
+    border-right: 0.1rem black solid;
+    padding: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 33%;
+    justify-content: space-between;
+
+    &:first-child {
+      border-left: 0.1rem black solid;
+    }
+
+    &:nth-child(4) {
+      border-left: 0.1rem black solid;
+    }
+    &:nth-child(7) {
+      border-left: 0.1rem black solid;
+    }
+    &:nth-child(10) {
+      border-left: 0.1rem black solid;
+    }
+  }
+}
+
+.submit-btn {
+  outline: none;
+  font-size: 2rem;
+  background: white;
+  border: 0.2rem black solid;
+
+  &:active {
+    background: black;
+    color: white;
+  }
+}
+
+#file-input {
+  width: 0.5px;
+  height: 0.5px;
+  opacity: 0;
+  overflow: visible;
+  // position: absolute;
+  z-index: -1;
+}
+
+#file-input-lable {
+  font-size: 1rem;
+  // border: 0.2rem white solid;
+  // border-bottom: 0.2rem black solid;
+  &:hover {
+    transition: 4s all;
+    background: white;
+    color: white;
+  }
+
+  &::after {
+    content: " <––";
+  }
+
+  &::before {
+    content: "––> ";
+  }
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 100%;
+  /* Specific width is required for Firefox. */
+  background: transparent;
+  /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+
+  &:active {
+    border: 0.2rem solid red;
+  }
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+
+  &:active {
+    border: 0.2rem solid red;
+  }
+}
+
+input[type=range]::-ms-thumb {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+
+  &:active {
+    border: 0.2rem solid red;
+  }
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.6rem;
+  cursor: pointer;
+  background: white;
+  position: relative;
+  border-bottom: 0.2rem black solid;
+}
+
+input[type=range]::-moz-slider-runnable-track {
+  width: 100%;
+  height: 0.6rem;
+  cursor: pointer;
+  background: white;
+  position: relative;
+  border-bottom: 0.2rem black solid;
+}
+
+input[type=range]::-ms-slider-runnable-track {
+  width: 100%;
+  height: 0.6rem;
+  cursor: pointer;
+  background: white;
+  position: relative;
+  border-bottom: 0.2rem black solid;
+}
+
+
+.not-logged-in{background: red;
+color:white;
+opacity: .7}

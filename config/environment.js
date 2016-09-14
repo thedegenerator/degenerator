@@ -2,7 +2,24 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'starter-project',
+    DS: {
+      host: 'http://localhost:3333',
+      namespace: '',
+    },
+  flashMessageDefaults: {
+    // flash message defaults
+    timeout: 5000,
+    extendedTimeout: 0,
+    priority: 200,
+    sticky: true,
+    showProgress: true,
+
+    // service defaults
+    type: 'alpaca',
+    types: [ 'alpaca', 'notice', 'foobar' ],
+    preventDuplicates: false
+  },
+    modulePrefix: 'degenerator-ui',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -39,8 +56,19 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.DS.host = "https://degenerator.herokuapp.com";
   }
 
+  ENV['ember-simple-auth'] = {
+    baseURL: '/',
+    routeAfterAuthentication: 'degenerator.upload'
+  };
+
+  ENV['ember-simple-auth-token'] = {
+    serverTokenEndpoint: `${ENV.DS.host}/token`,
+    tokenPropertyName: 'access_token',
+  };
+
   return ENV;
+
 };

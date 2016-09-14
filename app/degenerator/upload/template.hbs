@@ -1,0 +1,37 @@
+<div class="upload-container">
+  <div class="upload-container__inner">
+    {{#if session.isAuthenticated}}
+    {{#simple-form class="upload-form" startingValues=(hash threshold=20) onsubmit=(action "uploadImg") as |uploadInfo|}}
+
+      <div class="upload-card">
+
+        {{input class="image-title-input input" type="text" name="imageTitle" id="" placeholder="Title For Image" value=uploadInfo.title }}
+        <label class="view-threshold-lable upload-card__item" for="viewThreshold">Views 'til degeneration <span class="view-number">{{uploadInfo.threshold}}</span></label>
+        {{input class="view-threshold-input slider" type="range" min="10" max="50" name="viewThreshold"  placeholder="0" value=uploadInfo.threshold}}
+
+
+
+        <div class="checkbox-group upload-card__item">
+          {{#each filterTypes as |filterType|}}
+            <div class="checkbox-group__item">
+              <label >{{filterType}}</label>
+              {{input id=filterType name=filterType type="checkbox" class="style-checkbox" checked=(mut (get uploadInfo filterType))}}
+            </div>
+          {{/each}}
+        </div>
+
+        <div class="browse-group upload-card__item">
+          <label {{action "selectPhoto"}}>Choose File</label>
+        </div>
+        <button type="submit" class="submit-btn upload-card__item">SUBMIT</button>
+      </div>
+    {{/simple-form}}
+    {{else}}
+    <h1 class="not-logged-in"> YOU MUST LOG IN TO POST</h1>
+    {{/if}}
+
+  </div>
+
+</div>
+
+{{liquid-outlet}}
