@@ -1,0 +1,13 @@
+{{outlet}}
+{{!-- {{log model}} --}}
+{{#each model.diseases as |desease|}}
+<h1>{{desease.name}}</h1>
+{{#each model.sources as |value|}}
+{{value}}<span>,</span>
+{{#each model.patient_data as |pdata|}}
+  {{log pdata.disease.1}}
+{{/each}}
+
+
+{{/each}}
+{{/each}}
